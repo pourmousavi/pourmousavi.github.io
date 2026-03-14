@@ -5,8 +5,9 @@
 
 (function() {
   const CITATIONS_EL = document.getElementById('total-citations');
+  const HERO_CITATIONS_EL = document.getElementById('hero-citations');
   const HINDEX_EL = document.getElementById('h-index');
-  if (!CITATIONS_EL && !HINDEX_EL) return;
+  if (!CITATIONS_EL && !HERO_CITATIONS_EL && !HINDEX_EL) return;
 
   // Helper to format numbers with commas
   const formatNumber = (n) => {
@@ -17,8 +18,10 @@
     .then((r) => r.ok ? r.json() : null)
     .then((data) => {
       if (!data) return;
-      if (CITATIONS_EL && data.totalCitations != null) {
-        CITATIONS_EL.textContent = formatNumber(data.totalCitations);
+      if (data.totalCitations != null) {
+        const formatted = formatNumber(data.totalCitations);
+        if (CITATIONS_EL) CITATIONS_EL.textContent = formatted;
+        if (HERO_CITATIONS_EL) HERO_CITATIONS_EL.textContent = formatted;
       }
       if (HINDEX_EL && data.hIndex != null) {
         HINDEX_EL.textContent = String(data.hIndex);
