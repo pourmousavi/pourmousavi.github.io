@@ -173,6 +173,54 @@
         </div>
     </section>
 
+    <section class="news-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest News</h2>
+            </div>
+
+            <!-- Consolidated Filter Tabs -->
+            <div class="news-filter-tabs">
+                <button class="news-filter-tab active" data-filter="all">All</button>
+                <button class="news-filter-tab" data-filter="publications">Publications</button>
+                <button class="news-filter-tab" data-filter="awards-grants">Awards & Grants</button>
+                <button class="news-filter-tab" data-filter="team">Team</button>
+                <button class="news-filter-tab" data-filter="media">Media</button>
+                <button class="news-filter-tab" data-filter="events">Events</button>
+            </div>
+
+            <!-- News Items Container -->
+            <div class="news-items" id="news-container"></div>
+
+            <!-- View All Button -->
+            <div class="news-actions">
+                <button id="view-all-news" class="btn btn-secondary" style="display: none;">
+                    View All News
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Modal -->
+    <div class="news-modal" id="news-modal">
+        <div class="news-modal-overlay"></div>
+        <div class="news-modal-content">
+            <div class="news-modal-header">
+                <h2>All News</h2>
+                <button class="news-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="news-modal-tabs">
+                <button class="news-modal-tab active" data-filter="all">All</button>
+                <button class="news-modal-tab" data-filter="publications">Publications</button>
+                <button class="news-modal-tab" data-filter="awards-grants">Awards & Grants</button>
+                <button class="news-modal-tab" data-filter="team">Team</button>
+                <button class="news-modal-tab" data-filter="media">Media</button>
+                <button class="news-modal-tab" data-filter="events">Events</button>
+            </div>
+            <div class="news-modal-body" id="news-modal-container"></div>
+        </div>
+    </div>
+
     <section>
         <div class="container">
             <div class="section-header">
@@ -292,22 +340,6 @@
                         <a href="research.html#move" class="research-link">Learn More →</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="updates">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest Updates</h2>
-            </div>
-
-            <div class="updates-grid" id="updates-container">
-                <!-- Updates will be loaded here by JavaScript -->
-            </div>
-            
-            <div class="updates-actions">
-                <button id="view-all-updates" class="btn btn-secondary" style="display: none;">View All Updates</button>
             </div>
         </div>
     </section>
