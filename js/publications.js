@@ -1,7 +1,7 @@
 // Publications page JavaScript functionality
 let allPublications = [];
 let featuredPublications = [];
-let currentFilter = 'all';
+let activeFilters = new Set(['featured', 'journal', 'conference', 'book_chapter', 'book', 'patent']);
 let searchTerm = '';
 
 // Convert markdown links to HTML buttons
@@ -163,14 +163,21 @@ function updateCounts() {
     }
 }
 
-// Display publications based on current filter and search
+// Display publications based on current filters and search
 function displayPublications() {
     const container = document.getElementById('publications-container');
-    let filteredPubs = currentFilter === 'all' 
-        ? allPublications 
-        : currentFilter === 'featured'
-        ? featuredPublications
-        : allPublications.filter(p => p.type === currentFilter);
+
+    // Filter publications based on active filter chips
+    let filteredPubs = allPublications.filter(pub => {
+        // Check if publication type is in active filters
+        if (activeFilters.has(pub.type)) return true;
+        // Check if featured filter is active and publication is featured
+        if (activeFilters.has('featured') && featuredPublications.includes(pub)) return true;
+        return false;
+    });
+
+    // Remove duplicates (a featured publication might also match its type)
+    filteredPubs = [...new Map(filteredPubs.map(p => [p.title, p])).values()];
 
     // Apply search filter if search term exists
     if (searchTerm.trim()) {
@@ -193,16 +200,10 @@ function displayPublications() {
     }
 
     if (filteredPubs.length === 0) {
-        const noResultsMsg = searchTerm.trim() ? 
-            `No publications found matching "${searchTerm}" in the ${currentFilter === 'all' ? 'all publications' : currentFilter + ' category'}.` :
-            'No publications found for this category.';
+        const noResultsMsg = searchTerm.trim() ?
+            `No publications found matching "${searchTerm}" with the selected filters.` :
+            'No publications found. Try selecting more filter types.';
         container.innerHTML = `<p style="text-align: center; color: var(--text-secondary);">${noResultsMsg}</p>`;
-        return;
-    }
-
-    // Special layout for featured publications
-    if (currentFilter === 'featured') {
-        displayFeaturedPublications(filteredPubs, container);
         return;
     }
 
@@ -253,9 +254,12 @@ function displayPublications() {
 
         // Metadata on the right
         html += '<div class="pub-metadata">';
-        
-        // Year badge and Best Paper indicator
+
+        // Year badge, Featured indicator, and Best Paper indicator
         html += `<div class="pub-year-container">`;
+        if (featuredPublications.includes(pub)) {
+            html += `<span class="pub-badge pub-featured">FEATURED</span>`;
+        }
         if (pub.award === 'Best Paper') {
             html += `<span class="pub-badge pub-award-best-paper">BEST PAPER</span>`;
         }
@@ -340,14 +344,24 @@ function displayFeaturedPublications(pubs, container) {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Filter dropdown functionality
-    const filterSelect = document.getElementById('filter-type-select');
-    if (filterSelect) {
-        filterSelect.addEventListener('change', function() {
-            currentFilter = this.value;
+    // Filter chip buttons functionality
+    const filterChips = document.querySelectorAll('.filter-chip');
+    filterChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+            const filterType = this.dataset.filter;
+
+            // Toggle the active state
+            if (activeFilters.has(filterType)) {
+                activeFilters.delete(filterType);
+                this.classList.remove('active');
+            } else {
+                activeFilters.add(filterType);
+                this.classList.add('active');
+            }
+
             displayPublications();
         });
-    }
+    });
 
     // Search functionality
     const searchInput = document.getElementById('search-input');

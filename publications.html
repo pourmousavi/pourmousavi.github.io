@@ -115,17 +115,14 @@
     <div class="content">
         <!-- Filter Controls -->
         <div class="filter-controls">
-            <h2 class="section-title">Filter by type:</h2>
-            <div class="filter-dropdown">
-                <select id="filter-type-select">
-                    <option value="all">All types (<span id='count-all'>0</span>)</option>
-                    <option value="featured">⭐ Featured (<span id='count-featured'>0</span>)</option>
-                    <option value="journal">Journal Papers (<span id='count-journal'>0</span>)</option>
-                    <option value="conference">Conference Papers (<span id='count-conference'>0</span>)</option>
-                    <option value="book_chapter">Book Chapters (<span id='count-book_chapter'>0</span>)</option>
-                    <option value="book">Books (<span id='count-book'>0</span>)</option>
-                    <option value="patent">Patents (<span id='count-patent'>0</span>)</option>
-                </select>
+            <span class="filter-label">Filter by type:</span>
+            <div class="filter-chips">
+                <button type="button" class="filter-chip active" data-filter="featured">Featured (<span id="count-featured">0</span>)</button>
+                <button type="button" class="filter-chip active" data-filter="journal">Journal (<span id="count-journal">0</span>)</button>
+                <button type="button" class="filter-chip active" data-filter="conference">Conference (<span id="count-conference">0</span>)</button>
+                <button type="button" class="filter-chip active" data-filter="book_chapter">Book Chapters (<span id="count-book_chapter">0</span>)</button>
+                <button type="button" class="filter-chip active" data-filter="book">Books (<span id="count-book">0</span>)</button>
+                <button type="button" class="filter-chip active" data-filter="patent">Patents (<span id="count-patent">0</span>)</button>
             </div>
         </div>
 
