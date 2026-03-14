@@ -269,8 +269,8 @@ function displayPublications() {
         
         // Links
         html += '<div class="pub-links">';
-        if (pub.doi) {
-            html += `<a href="${pub.doi}" target="_blank" class="pub-link" title="View DOI">🔗</a>`;
+        if (pub.url) {
+            html += `<a href="${pub.url}" target="_blank" class="pub-link" title="View Publication">🔗</a>`;
         }
         if (pub.pdf) {
             html += `<a href="${pub.pdf}" target="_blank" class="pub-link" title="Download PDF">📄</a>`;
@@ -323,8 +323,8 @@ function displayFeaturedPublications(pubs, container) {
         
         // Links
         html += '<div class="featured-pub-links">';
-        if (pub.doi) {
-            html += `<a href="${pub.doi}" target="_blank" class="featured-link" title="View DOI">🔗</a>`;
+        if (pub.url) {
+            html += `<a href="${pub.url}" target="_blank" class="featured-link" title="View Publication">🔗</a>`;
         }
         if (pub.pdf) {
             html += `<a href="${pub.pdf}" target="_blank" class="featured-link" title="Download PDF">📄</a>`;

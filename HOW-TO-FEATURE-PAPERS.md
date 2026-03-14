@@ -41,7 +41,7 @@ The system selects featured papers in this order:
   "volume": "396:126201",
   "year": 2025,
   "month": "Oct.",
-  "doi": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
+  "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
   "pdf": "docs/JPaper3-2025.pdf",
   "featured": true,
   "featuredReason": "Breakthrough methodology for mining microgrid optimization with real-world industry applications"
@@ -60,7 +60,7 @@ Papers with awards are automatically featured (if space available):
   "type": "journal",
   "journal": "IEEE Transactions...",
   "award": "Best Paper Award",
-  "doi": "...",
+  "url": "...",
   "pdf": "..."
 }
 ```
@@ -112,7 +112,7 @@ If you don't provide `featuredReason`, the system generates one automatically:
      "volume": "396:126201",
      "year": 2025,
      "month": "Oct.",
-     "doi": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
+     "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
      "pdf": "docs/JPaper3-2025.pdf",
      "featured": true,
      "featuredReason": "Novel approach to microgrid frequency control with direct mining industry applications"
