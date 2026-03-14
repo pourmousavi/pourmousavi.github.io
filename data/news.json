@@ -1,0 +1,108 @@
+{
+  "news": [
+    {
+      "id": "news-2025-001",
+      "date": "2025-01-15",
+      "type": "publication",
+      "title": "New paper published on mining electrification in Optimization Letters",
+      "link": "publications.html#jpaper5-2025",
+      "featured": true
+    },
+    {
+      "id": "news-2024-012",
+      "date": "2024-12-10",
+      "type": "student",
+      "title": "Sarah Chen started PhD on battery storage optimization",
+      "link": "team.html#phd-students",
+      "featured": false
+    },
+    {
+      "id": "news-2024-011",
+      "date": "2024-11-28",
+      "type": "media",
+      "title": "ABC Radio interview on European blackouts and grid resilience",
+      "link": "media.html",
+      "featured": true
+    },
+    {
+      "id": "news-2024-010",
+      "date": "2024-11-15",
+      "type": "grant",
+      "title": "Awarded $450K ARC Discovery Grant for battery management systems research",
+      "link": "#",
+      "featured": true
+    },
+    {
+      "id": "news-2024-009",
+      "date": "2024-10-20",
+      "type": "graduation",
+      "title": "Dr. Michael Wong successfully defended PhD thesis on smart grid integration",
+      "link": "team.html#alumni",
+      "featured": false
+    },
+    {
+      "id": "news-2024-008",
+      "date": "2024-10-05",
+      "type": "conference",
+      "title": "Best Paper Award at IEEE ISGT Europe 2024 for microgrid sizing methodology",
+      "link": "publications.html",
+      "featured": true
+    },
+    {
+      "id": "news-2024-007",
+      "date": "2024-09-18",
+      "type": "publication",
+      "title": "Paper on battery degradation modeling accepted in Nature Energy",
+      "link": "publications.html",
+      "featured": false
+    },
+    {
+      "id": "news-2024-006",
+      "date": "2024-08-30",
+      "type": "student",
+      "title": "James Liu won Dean's Prize for Excellence in Engineering Research",
+      "link": "team.html",
+      "featured": false
+    },
+    {
+      "id": "news-2024-005",
+      "date": "2024-08-12",
+      "type": "collaboration",
+      "title": "Signed MOU with Tesla Energy for grid-scale battery systems research",
+      "link": "#",
+      "featured": true
+    },
+    {
+      "id": "news-2024-004",
+      "date": "2024-07-25",
+      "type": "media",
+      "title": "Featured in Australian Mining Magazine on MOVE project and mining electrification",
+      "link": "media.html",
+      "featured": false
+    },
+    {
+      "id": "news-2024-003",
+      "date": "2024-07-10",
+      "type": "award",
+      "title": "Received Adelaide University's Outstanding Early Career Researcher Award",
+      "link": "#",
+      "featured": true
+    },
+    {
+      "id": "news-2024-002",
+      "date": "2024-06-15",
+      "type": "conference",
+      "title": "Keynote speaker at Australian Power & Energy Society Conference on smart grids",
+      "link": "#",
+      "featured": false
+    },
+    {
+      "id": "news-2024-001",
+      "date": "2024-05-20",
+      "type": "student",
+      "title": "Dr. Anna Mueller joined as visiting research scholar from Technical University Munich",
+      "link": "team.html",
+      "featured": false
+    }
+  ]
+}

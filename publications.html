@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Publications | Dr. Ali Pourmousavi | 70+ Papers | 2500+ Citations</title>
+    <meta name="title" content="Publications | Dr. Ali Pourmousavi | 70+ Papers | 2500+ Citations">
+    <meta name="description" content="Complete publication list: 70+ peer-reviewed papers in IEEE Transactions, Nature Scientific Data, Renewable Energy Reviews. h-index: 16. Research on battery storage, smart grids, and renewable energy.">
+    <meta name="keywords" content="Ali Pourmousavi publications, power systems papers, IEEE Transactions, battery storage research papers, smart grid publications, renewable energy papers, Google Scholar, h-index, academic publications">
+    <meta name="author" content="Dr. Seyyed Ali Pourmousavi Kani">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://alipourmousavi.com/publications.html">
+    
+    <!-- Academic Meta Tags -->
+    <meta name="citation_author" content="Pourmousavi Kani, Seyyed Ali">
+    <meta name="citation_author_institution" content="Adelaide University">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://alipourmousavi.com/publications.html">
+    <meta property="og:title" content="Publications | 70+ Papers | Dr. Ali Pourmousavi">
+    <meta property="og:description" content="Comprehensive publication list with 2500+ citations in power systems, battery storage, and renewable energy research.">
+    <meta property="og:site_name" content="Ali Pourmousavi">
+    <meta property="og:image" content="https://alipourmousavi.com/images/publications-preview.jpg">
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Plausible Analytics - Privacy-friendly, no cookies -->
+    <script defer data-domain="alipourmousavi.com" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "author": {
+        "@type": "Person",
+        "name": "Seyyed Ali Pourmousavi Kani",
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "Adelaide University"
+        }
+      },
+      "about": "Power Systems, Battery Storage, Smart Grid, Renewable Energy",
+      "citation": "2500+",
+      "publication": "70+ peer-reviewed papers"
+    }
+    </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://alipourmousavi.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Publications", "item": "https://alipourmousavi.com/publications.html"}
+            ]
+        }
+        </script>
+</head>
+ 
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/profile.jpg" alt="Dr. Ali Pourmousavi" class="nav-profile-image">
+                <span>Dr. Ali Pourmousavi</span>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="header-content">
+            <h1>Publications</h1>
+            <p>Comprehensive list of research publications in leading international journals and conferences</p>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number" id="total-publications">90+</span>
+                    <span class="stat-label">Total Publications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="total-citations">3,200+</span>
+                    <span class="stat-label">Total Citations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="h-index">18</span>
+                    <span class="stat-label">h-index</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+            <h2 class="section-title">Filter by type:</h2>
+            <div class="filter-dropdown">
+                <select id="filter-type-select">
+                    <option value="all">All types (<span id='count-all'>0</span>)</option>
+                    <option value="featured">⭐ Featured (<span id='count-featured'>0</span>)</option>
+                    <option value="journal">Journal Papers (<span id='count-journal'>0</span>)</option>
+                    <option value="conference">Conference Papers (<span id='count-conference'>0</span>)</option>
+                    <option value="book_chapter">Book Chapters (<span id='count-book_chapter'>0</span>)</option>
+                    <option value="book">Books (<span id='count-book'>0</span>)</option>
+                    <option value="patent">Patents (<span id='count-patent'>0</span>)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Search Field -->
+        <div class="search-controls">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search publications by title, authors, or venue..." />
+                <button id="clear-search" style="display: none;">✕</button>
+            </div>
+            <p class="search-results" id="search-results" style="display: none;"></p>
+        </div>
+
+        <!-- Publications List -->
+        <div id="publications-container">
+            <!-- Publications will be loaded here by JavaScript -->
+        </div>
+
+        <!-- Download Section -->
+        <div class="download-section">
+            <h2 class="section-title">Download Complete Publication List</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-secondary);">Get the full bibliography in PDF format with abstracts and citation information</p>
+            <a href="#" class="btn btn-primary">Download Complete List</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Dr. Ali Pourmousavi</h3>
+                <p>Senior Lecturer specializing in renewable energy systems, battery storage optimization, and smart grid technologies at Adelaide University.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Research</h4>
+                <ul>
+                    <li><a href="research.html">Projects</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="https://scholar.google.com/citations?user=XoHCLowAAAAJ" target="_blank">Google Scholar</a></li>
+                    <li><a href="https://www.linkedin.com/in/alipourmousavi/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://researchers.adelaide.edu.au/profile/a.pourm" target="_blank">University Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a class="ob-email" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Email"></a></li>
+                    <li><a href="contact.html">Full Contact Info</a></li>
+                    <li><a href="#">Download CV</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dr. Seyyed Ali Pourmousavi Kani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/publications.js"></script>
+    <script src="js/scholar.js"></script>
+</body>
+</html>
