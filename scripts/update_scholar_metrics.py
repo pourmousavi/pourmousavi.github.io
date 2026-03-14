@@ -19,7 +19,7 @@ if not API_KEY:
     print("SERPAPI_API_KEY is not set. Exiting without changes.")
     sys.exit(0)
 
-URL = "https://serpapi.com/google_scholar_author"
+URL = "https://serpapi.com/search"
 params = {
     "engine": "google_scholar_author",
     "hl": "en",
