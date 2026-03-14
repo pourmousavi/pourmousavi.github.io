@@ -42,19 +42,19 @@
       "location": "Australia",
       "year": 2025,
       "month": "December 7-11",
-      "url": "https://ieeexplore.ieee.org/document/11402655",
+      "url": "https://ieeexplore.ieee.org/document/11231346",
       "pdf": "docs/CPaper2-2025.pdf"
     },
     {
       "id": "cpaper1-2025",
       "type": "conference",
       "title": "A decentralised privacy-preserving solution for home battery concurrent charging mitigation",
-      "authors": "Nam Trong Dinh and S. Ali Pourmousavi and Jon A. R. Liisberg and Juli\u00e1n Lemos-Vinasco",
+      "authors": "Nam Trong Dinh and S. Ali Pourmousavi and Jon A. R. Liisberg and Julián Lemos-Vinasco",
       "conference": "2025 IEEE International Conference on Energy Technologies for Future Grids (ETFG)",
       "location": "Australia",
       "year": 2025,
       "month": "December 7-11",
-      "url": "https://ieeexplore.ieee.org/document/11401121",
+      "url": "https://ieeexplore.ieee.org/document/11231346",
       "pdf": "docs/CPaper1-2025.pdf"
     },
     {
@@ -76,7 +76,7 @@
       "journal": "Optimization Letters",
       "year": 2025,
       "month": "May",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0306261925009316",
+      "url": "https://link.springer.com/article/10.1007/s11590-025-02214-4",
       "pdf": "docs/JPaper5-2025.pdf"
     },
     {
@@ -88,7 +88,7 @@
       "volume": "396:126201",
       "year": 2025,
       "month": "Oct.",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306261925009316",
       "pdf": "docs/JPaper4-2025.pdf"
     },
     {
@@ -100,7 +100,7 @@
       "volume": "129:117104",
       "year": 2025,
       "month": "Sep.",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25012733",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
       "pdf": "docs/JPaper3-2025.pdf"
     },
     {
@@ -112,7 +112,7 @@
       "volume": "123:116560",
       "year": 2025,
       "month": "July",
-      "url": "https://authors.elsevier.com/sd/article/S0378-7753(25)00052-7",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25012733",
       "pdf": "docs/JPaper2-2025.pdf"
     },
     {
@@ -124,7 +124,7 @@
       "volume": "631:236216",
       "year": 2025,
       "month": "March",
-      "url": "https://ieeexplore.ieee.org/document/10863189",
+      "url": "https://authors.elsevier.com/sd/article/S0378-7753(25)00052-7",
       "pdf": "docs/JPaper1-2025.pdf"
     },
     {
@@ -136,19 +136,19 @@
       "location": "Croatia",
       "year": 2024,
       "month": "October 14-17",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0952197624008601",
+      "url": "https://ieeexplore.ieee.org/document/10863189",
       "pdf": "docs/CPaper2-2024.pdf"
     },
     {
       "id": "jpaper7-2024",
       "type": "journal",
       "title": "Point-based and probabilistic electricity demand prediction with a Neural Facebook Prophet and Kernel density estimation model",
-      "authors": "Sujan Ghimire, Ravinesh C. Deo, S. Ali Pourmousavi, David Casillas-P\u00e9rez, Sancho Salcedo-Sanz, U. Rajendra Achary",
+      "authors": "Sujan Ghimire, Ravinesh C. Deo, S. Ali Pourmousavi, David Casillas-Pérez, Sancho Salcedo-Sanz, U. Rajendra Achary",
       "journal": "Engineering Applications of Artificial Intelligence",
       "volume": "135:108702",
       "year": 2024,
       "month": "May",
-      "url": "https://dl.acm.org/doi/10.1145/3632775.3661960",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197624008601",
       "pdf": "docs/JPaper7-2024.pdf"
     },
     {
@@ -160,7 +160,7 @@
       "location": "Singapore",
       "year": 2024,
       "month": "June 4-7",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0378775324003793",
+      "url": "https://dl.acm.org/doi/10.1145/3632775.3661960",
       "pdf": "docs/CPaper1-2024.pdf"
     },
     {
@@ -172,7 +172,7 @@
       "volume": "603:234428",
       "year": 2024,
       "month": "May",
-      "url": "https://ieeexplore.ieee.org/document/10485194",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378775324003793",
       "pdf": "docs/JPaper6-2024.pdf"
     },
     {
@@ -184,7 +184,7 @@
       "status": "Accepted for publication",
       "year": 2024,
       "month": "March",
-      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453315",
+      "url": "https://ieeexplore.ieee.org/document/10485194",
       "pdf": "docs/JPaper5-2024.pdf"
     },
     {
@@ -196,7 +196,7 @@
       "volume": "12(1), 45-55",
       "year": 2024,
       "month": "March",
-      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453332",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453315",
       "pdf": "docs/JPaper4-2024.pdf"
     },
     {
@@ -208,7 +208,7 @@
       "volume": "12(1), 16-26",
       "year": 2024,
       "month": "March",
-      "url": "https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(24)00055-9",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453332",
       "pdf": "docs/JPaper3-2024.pdf"
     },
     {
@@ -220,7 +220,7 @@
       "volume": "5(2), 101830",
       "year": 2024,
       "month": "Feb. 21",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0952197624000769",
+      "url": "https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(24)00055-9",
       "pdf": "docs/JPaper2-2024.pdf",
       "notes": "[The Conversation article](https://theconversation.com/smart-meters-havent-delivered-the-promised-benefits-to-electricity-users-heres-a-way-to-fix-the-problems-225346)",
       "featured": true,
@@ -230,12 +230,12 @@
       "id": "jpaper1-2024",
       "type": "journal",
       "title": "Probabilistic-based electricity demand forecasting with hybrid convolutional neural network-extreme learning machine model",
-      "authors": "Sujan Ghimire, Ravinesh C. Deo, David Casillas-P\u00e9rez, Sancho Salcedo-Sanz, S. Ali Pourmousavi, U. Rajendra Achary",
+      "authors": "Sujan Ghimire, Ravinesh C. Deo, David Casillas-Pérez, Sancho Salcedo-Sanz, S. Ali Pourmousavi, U. Rajendra Achary",
       "journal": "Engineering Applications of Artificial Intelligence",
       "volume": "132",
       "year": 2024,
       "month": "June",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169207023001358",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197624000769",
       "pdf": "docs/JPaper1-2024.pdf"
     },
     {
@@ -247,7 +247,7 @@
       "status": "Accepted for publication",
       "year": 2023,
       "month": "Dec.",
-      "url": "https://ieeexplore.ieee.org/document/10286047",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169207023001358",
       "pdf": "docs/JPaper6-2023.pdf"
     },
     {
@@ -259,7 +259,7 @@
       "volume": "1:4",
       "year": 2023,
       "month": "Dec.",
-      "url": "https://www.nature.com/articles/s41597-023-02271-3",
+      "url": "https://ieeexplore.ieee.org/document/10286047",
       "pdf": "docs/JPaper5-2023.pdf"
     },
     {
@@ -271,7 +271,7 @@
       "volume": "10:371",
       "year": 2023,
       "month": "June",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X23011386",
+      "url": "https://www.nature.com/articles/s41597-023-02271-3",
       "pdf": "docs/JPaper4-2023.pdf",
       "notes": "[Link to data and codes](https://doi.org/10.6084/m9.figshare.c.6383862.v1) [Link to blog post](https://engineeringcommunity.nature.com/posts/exploring-future-smart-grid-residential-electricity-usage-with-a-synthetic-dataset-of-danish-electricity-prosumers)",
       "featured": true,
@@ -286,7 +286,7 @@
       "volume": "68:107741",
       "year": 2023,
       "month": "September",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0378775323004020",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X23011386",
       "pdf": "docs/JPaper3-2023.pdf"
     },
     {
@@ -298,7 +298,7 @@
       "volume": "570:233027",
       "year": 2023,
       "month": "June",
-      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00045-4",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378775323004020",
       "pdf": "docs/JPaper2-2023.pdf"
     },
     {
@@ -310,7 +310,7 @@
       "volume": "100708",
       "year": 2023,
       "month": "March",
-      "url": "https://ieeexplore.ieee.org/document/10215664",
+      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00045-4",
       "pdf": "docs/JPaper1-2023.pdf"
     },
     {
@@ -323,7 +323,7 @@
       "year": 2022,
       "month": "Sep. 26-28",
       "award": "Best Paper",
-      "url": "https://ieeexplore.ieee.org/document/10215582",
+      "url": "https://ieeexplore.ieee.org/document/10215664",
       "pdf": "docs/CPaper5-2022.pdf",
       "featured": true,
       "featuredReason": "Awarded Best Paper at AUPEC 2022"
@@ -337,7 +337,7 @@
       "location": "Adelaide, Australia",
       "year": 2022,
       "month": "Sep. 26-28",
-      "url": "https://ieeexplore.ieee.org/document/10215771",
+      "url": "https://ieeexplore.ieee.org/document/10215582",
       "pdf": "docs/CPaper4-2022.pdf"
     },
     {
@@ -350,7 +350,7 @@
       "year": 2022,
       "month": "Sep. 26-28",
       "award": "Best Paper",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S096014812201833X",
+      "url": "https://ieeexplore.ieee.org/document/10215771",
       "pdf": "docs/CPaper3-2022.pdf",
       "featured": true,
       "featuredReason": "Awarded Best Paper at AUPEC 2022"
@@ -364,7 +364,7 @@
       "volume": "203:113-130",
       "year": 2023,
       "month": "February",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X22023738",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S096014812201833X",
       "pdf": "docs/JPaper7-2022.pdf"
     },
     {
@@ -376,7 +376,7 @@
       "volume": "58:106384",
       "year": 2023,
       "month": "February",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0306261922016592",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X22023738",
       "pdf": "docs/JPaper6-2022.pdf"
     },
     {
@@ -388,7 +388,7 @@
       "volume": "331:120402",
       "year": 2023,
       "month": "February",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0952197622005784",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0306261922016592",
       "pdf": "docs/JPaper5-2022.pdf"
     },
     {
@@ -400,7 +400,7 @@
       "volume": "117:105588, Part A",
       "year": 2023,
       "month": "January",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0142061522006391",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197622005784",
       "pdf": "docs/JPaper4-2022.pdf"
     },
     {
@@ -412,7 +412,7 @@
       "volume": "145:108643",
       "year": 2023,
       "month": "Feb",
-      "url": "https://ieeexplore.ieee.org/document/9960429",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0142061522006391",
       "pdf": "docs/JPaper3-2022.pdf"
     },
     {
@@ -424,7 +424,7 @@
       "location": "Novi Sad, Serbia",
       "year": 2022,
       "month": "Oct. 10-12",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0142061522003805",
+      "url": "https://ieeexplore.ieee.org/document/9960429",
       "pdf": "docs/CPaper2-2022.pdf"
     },
     {
@@ -435,7 +435,7 @@
       "journal": "International Journal of Electrical Power and Energy Systems",
       "volume": "142:Part B",
       "year": 2022,
-      "url": "https://dl.acm.org/doi/10.1145/3538637.3538837",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0142061522003805",
       "pdf": "docs/JPaper2-2022.pdf"
     },
     {
@@ -447,7 +447,7 @@
       "location": "Oldenburg, Germany",
       "year": 2022,
       "month": "June 28 - July 1",
-      "url": "https://authors.elsevier.com/sd/article/S1364-0321(22)00500-7",
+      "url": "https://dl.acm.org/doi/10.1145/3538637.3538837",
       "pdf": "docs/CPaper1-2022.pdf"
     },
     {
@@ -458,7 +458,7 @@
       "journal": "Renewable & Sustainable Energy Reviews",
       "volume": "165:112605",
       "year": 2022,
-      "url": "https://ieeexplore.ieee.org/document/9388938/",
+      "url": "https://authors.elsevier.com/sd/article/S1364-0321(22)00500-7",
       "pdf": "docs/JPaper1-2022.pdf"
     },
     {
@@ -469,7 +469,7 @@
       "journal": "IEEE Transactions on Power Systems",
       "volume": "36(6):5245-5257",
       "year": 2021,
-      "url": "https://ieeexplore.ieee.org/document/9597804",
+      "url": "https://ieeexplore.ieee.org/document/9388938/",
       "pdf": "docs/JPaper3-2021.pdf"
     },
     {
@@ -481,7 +481,7 @@
       "location": "Perth, Australia",
       "year": 2021,
       "month": "Sep. 26-30",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0142061521001526",
+      "url": "https://ieeexplore.ieee.org/document/9597804",
       "pdf": "docs/CPaper2-2021.pdf"
     },
     {
@@ -492,19 +492,19 @@
       "journal": "International Journal of Electrical Power and Energy Systems",
       "volume": "131, 106912",
       "year": 2021,
-      "url": "https://ieeexplore.ieee.org/document/9640146",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0142061521001526",
       "pdf": "docs/JPaper2-2021.pdf"
     },
     {
       "id": "cpaper1-2021",
       "type": "conference",
       "title": "Behind-the-meter energy flexibility modelling for aggregator operation with a focus on uncertainty",
-      "authors": "Emma M. V. Blomgren, Razgar Ebrahimy, S. Ali Pourmousavi, Jan Kloppenborg M\u00f8ller, Francesco D'Ettorre, Mohsen Banaei, and Henrik Madsen",
+      "authors": "Emma M. V. Blomgren, Razgar Ebrahimy, S. Ali Pourmousavi, Jan Kloppenborg Møller, Francesco D'Ettorre, Mohsen Banaei, and Henrik Madsen",
       "conference": "Innovative Smart Grid Technologies (ISGT) Europe",
       "location": "Espoo, Finland",
       "year": 2021,
       "month": "Oct. 18-21",
-      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/rpg2.12008",
+      "url": "https://ieeexplore.ieee.org/document/9640146",
       "pdf": "docs/CPaper1-2021.pdf"
     },
     {
@@ -515,7 +515,7 @@
       "journal": "IET Renewable Power Generation",
       "volume": "15(1)",
       "year": 2021,
-      "url": "https://ieeexplore.ieee.org/document/9364565",
+      "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/rpg2.12008",
       "pdf": "docs/JPaper2-2020.pdf"
     },
     {
@@ -527,7 +527,7 @@
       "location": "Perth, Australia",
       "year": 2020,
       "month": "Nov. 23-26",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X20317163",
+      "url": "https://ieeexplore.ieee.org/document/9364565",
       "pdf": "docs/CPaper1-2020.pdf"
     },
     {
@@ -538,7 +538,7 @@
       "journal": "Journal of Energy Storage",
       "volume": "32, 101879",
       "year": 2020,
-      "url": "https://ieeexplore.ieee.org/document/9166713",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2352152X20317163",
       "pdf": "docs/JPaper3-2020.pdf"
     },
     {
@@ -549,7 +549,7 @@
       "journal": "IEEE Systems Journal",
       "volume": "15 (4):5267-5276",
       "year": 2021,
-      "url": "https://ieeexplore.ieee.org/document/8544048",
+      "url": "https://ieeexplore.ieee.org/document/9166713",
       "pdf": "docs/JPaper1-2020.pdf"
     },
     {
@@ -560,7 +560,7 @@
       "journal": "IEEE Transactions on Sustainable Energy",
       "volume": "11(1):37-47",
       "year": 2020,
-      "url": "https://ieeexplore.ieee.org/document/8894550",
+      "url": "https://ieeexplore.ieee.org/document/8544048",
       "pdf": "docs/JPaper4-2018.pdf"
     },
     {
@@ -571,7 +571,7 @@
       "journal": "IEEE Transactions on Power Systems",
       "volume": "35(3), 1868-1880",
       "year": 2020,
-      "url": "https://ieeexplore.ieee.org/document/8973809",
+      "url": "https://ieeexplore.ieee.org/document/8894550",
       "pdf": "docs/JPaper1-2019.pdf"
     },
     {
@@ -584,7 +584,7 @@
       "year": 2019,
       "month": "Aug. 4-8",
       "status": "Accepted for presentation",
-      "url": "https://patents.google.com/patent/US20170256004",
+      "url": "https://ieeexplore.ieee.org/document/8973809",
       "pdf": "docs/CPaper3-2019.pdf"
     },
     {
@@ -595,7 +595,7 @@
       "patent_number": "US Patent 10,497,072 B2",
       "year": 2017,
       "month": "September 7",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2405896319304823",
+      "url": "https://patents.google.com/patent/US20170256004",
       "pdf": "docs/Patent4_2017.pdf"
     },
     {
@@ -607,7 +607,7 @@
       "location": "Jeju, Republic of Korea",
       "year": 2019,
       "month": "June 10-12",
-      "url": "https://ieeexplore.ieee.org/document/8881157",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405896319304823",
       "pdf": "docs/CPaper2-2019.pdf"
     },
     {
@@ -619,7 +619,7 @@
       "location": "Chengdu, China",
       "year": 2019,
       "month": "May 21-24",
-      "url": "https://ieeexplore.ieee.org/document/8570785",
+      "url": "https://ieeexplore.ieee.org/document/8881157",
       "pdf": "docs/CPaper1-2019.pdf"
     },
     {
@@ -630,7 +630,7 @@
       "journal": "IEEE Transactions on Power Systems",
       "volume": "34(3):1918-1930",
       "year": 2019,
-      "url": "https://patentimages.storage.googleapis.com/b4/2c/fe/0014e2208dd215/US10422835.pdf",
+      "url": "https://ieeexplore.ieee.org/document/8570785",
       "pdf": "docs/JPaper5-2018.pdf"
     },
     {
@@ -642,7 +642,7 @@
       "year": 2019,
       "month": "Sep. 24",
       "submitted": "April 27 2017",
-      "url": "https://digital-library.theiet.org/doi/abs/10.1049/PBPO139E_ch2",
+      "url": "https://patentimages.storage.googleapis.com/b4/2c/fe/0014e2208dd215/US10422835.pdf",
       "pdf": "docs/Patent2.pdf"
     },
     {
@@ -655,7 +655,7 @@
       "pages": "624 pages",
       "year": 2019,
       "month": "Oct. 7",
-      "url": "https://alipourmousavi.com/docs/CPaper3-2018.pdf",
+      "url": "https://digital-library.theiet.org/doi/abs/10.1049/PBPO139E_ch2",
       "pdf": "docs/CPaper3-2018.pdf"
     },
     {
@@ -679,7 +679,7 @@
       "location": "Limassol, Cyprus",
       "year": 2018,
       "month": "June 3-7",
-      "url": "https://ieeexplore.ieee.org/abstract/document/8398821/",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8398773/",
       "pdf": "docs/CPaper1-2018.pdf"
     },
     {
@@ -691,7 +691,7 @@
       "location": "Limassol, Cyprus",
       "year": 2018,
       "month": "June 3-7",
-      "url": "https://alipourmousavi.com/docs/EECON_Presentation_Ali_Pourmousavi_2018.pdf",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8398821/",
       "pdf": "docs/CPaper2-2018.pdf"
     },
     {
@@ -712,9 +712,9 @@
       "title": "Evaluation of battery operation in ramp-rate control mode within a PV plant: A case study",
       "authors": "S. Ali Pourmousavi, and Tapan K. Saha",
       "journal": "Solar Energy",
-      "volume": "166:242\u2013254",
+      "volume": "166:242–254",
       "year": 2018,
-      "url": "http://ieeexplore.ieee.org/document/8290690/",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0038092X18302482",
       "pdf": "docs/JPaper3-2018.pdf",
       "notes": "[Article has an altmetric score of 2](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=36669177)"
     },
@@ -726,7 +726,7 @@
       "journal": "IEEE Access",
       "volume": "6:11694-11706",
       "year": 2018,
-      "url": "https://authors.elsevier.com/c/1WKoA1M7~0YQ7B",
+      "url": "http://ieeexplore.ieee.org/document/8290690/",
       "pdf": "docs/JPaper2-2018.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Faccess.2018.2805330)"
     },
@@ -736,9 +736,9 @@
       "title": "An advanced retail electricity market for active distribution systems and home microgrid interoperability based on game theory",
       "authors": "Mousa Marzband, Masoumeh Javadi, S. Ali Pourmousavi, and Gordon Lightbody",
       "journal": "Electric Power Systems Research",
-      "volume": "157:187\u2013199",
+      "volume": "157:187–199",
       "year": 2018,
-      "url": "https://arxiv.org/abs/1709.08023",
+      "url": "https://authors.elsevier.com/c/1WKoA1M7~0YQ7B",
       "pdf": "docs/JPaper1-2018.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1016%2Fj.epsr.2017.12.024)"
     },
@@ -750,7 +750,7 @@
       "conference": "Publicly available on ArXiv",
       "year": 2017,
       "month": "September",
-      "url": "http://ieeexplore.ieee.org/document/8282448/",
+      "url": "https://arxiv.org/abs/1709.08023",
       "pdf": "docs/CPaper2-2017.pdf",
       "notes": "[Article has an altmetric score of 4](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=26572883)"
     },
@@ -763,7 +763,7 @@
       "location": "Melbourne, Australia",
       "year": 2017,
       "month": "November 19-22",
-      "url": "https://patents.google.com/patent/US20170229881A1/en",
+      "url": "http://ieeexplore.ieee.org/document/8282448/",
       "pdf": "docs/CPaper3-2017.pdf"
     },
     {
@@ -774,7 +774,7 @@
       "patent_number": "US Patent 10,298,042 B2",
       "year": 2017,
       "month": "August 10",
-      "url": "http://ieeexplore.ieee.org/document/8274230/",
+      "url": "https://patents.google.com/patent/US20170229881A1/en",
       "pdf": "docs/Patent3_2017.pdf"
     },
     {
@@ -786,7 +786,7 @@
       "location": "Chicago, USA",
       "year": 2017,
       "month": "July 16-20",
-      "url": "http://www.mdpi.com/1996-1073/9/1/34",
+      "url": "http://ieeexplore.ieee.org/document/8274230/",
       "pdf": "docs/CPaper1-2017.pdf"
     },
     {
@@ -797,7 +797,7 @@
       "journal": "Energies",
       "volume": "9(1):34",
       "year": 2016,
-      "url": "http://ieeexplore.ieee.org/document/7781262/",
+      "url": "http://www.mdpi.com/1996-1073/9/1/34",
       "pdf": "docs/JPaper1-2016.pdf",
       "notes": "[Article has an altmetric score of 1](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=12042549)"
     },
@@ -806,10 +806,10 @@
       "type": "conference",
       "title": "BSS sizing and economic benefit analysis in grid-scale application",
       "authors": "Shankar Mohan, Ali Hooshmand, S. Ali Pourmousavi, and Ratnesh K. Sharma",
-      "conference": "IEEE ISGT\u2013North America Conference",
+      "conference": "IEEE ISGT–North America Conference",
       "location": "Minneapolis, USA",
       "year": 2016,
-      "url": "http://ieeexplore.ieee.org/document/7781028/",
+      "url": "http://ieeexplore.ieee.org/document/7781262/",
       "pdf": "docs/CPaper1-2016.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2fisgt.2016.7781262)"
     },
@@ -818,10 +818,10 @@
       "type": "conference",
       "title": "A novel algorithm to integrate battery cyclic and calendar agings within a single framework",
       "authors": "S. Ali Pourmousavi, Babak Asghari, and Ratnesh Sharma",
-      "conference": "IEEE ISGT\u2013North America Conference",
+      "conference": "IEEE ISGT–North America Conference",
       "location": "Minneapolis, USA",
       "year": 2016,
-      "url": "http://ieeexplore.ieee.org/document/7519908/",
+      "url": "http://ieeexplore.ieee.org/document/7781028/",
       "pdf": "docs/CPaper2-2016.pdf",
       "notes": "[Article has an altmetric score of 9](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62764833)"
     },
@@ -833,7 +833,7 @@
       "conference": "IEEE Transmission and Distribution Conference",
       "location": "Dallas, USA",
       "year": 2016,
-      "url": "https://www.google.com/patents/US20130024042",
+      "url": "http://ieeexplore.ieee.org/document/7519908/",
       "pdf": "docs/CPaper3-2016.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftdc.2016.7519908)"
     },
@@ -844,7 +844,7 @@
       "authors": "Babak Asghari, Ratnesh K. Sharma, S. Ali Pourmousavi",
       "patent_number": "U.S. Patent 9,020,649",
       "year": 2015,
-      "url": "http://ieeexplore.ieee.org/document/7017576/",
+      "url": "https://www.google.com/patents/US20130024042",
       "pdf": "docs/JPaper1-2015.pdf"
     },
     {
@@ -853,9 +853,9 @@
       "title": "Multi-timescale power management for islanded microgrids including storage and demand response",
       "authors": "S. Ali Pourmousavi, M. Hashem Nehrir, and Ratnesh K. Sharma",
       "journal": "IEEE Transactions on Smart Grid",
-      "volume": "6(3):1185\u20131195",
+      "volume": "6(3):1185–1195",
       "year": 2015,
-      "url": "http://ieeexplore.ieee.org/document/6740919/",
+      "url": "http://ieeexplore.ieee.org/document/7017576/",
       "pdf": "docs/JPaper1-2015.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2014.2387068)"
     },
@@ -865,9 +865,9 @@
       "title": "Real-time demand response through aggregate electric water heaters for load shifting and balancing wind generation",
       "authors": "S. Ali Pourmousavi, Stasha N. Patrick, and M. Hashem Nehrir",
       "journal": "IEEE Transactions on Smart Grid",
-      "volume": "5(2):769\u2013778",
+      "volume": "5(2):769–778",
       "year": 2014,
-      "url": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6717056",
+      "url": "http://ieeexplore.ieee.org/document/6740919/",
       "pdf": "docs/JPaper1-2014.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2013.2290084)"
     },
@@ -877,9 +877,9 @@
       "title": "Introducing dynamic demand response in the LFC model",
       "authors": "S. Ali Pourmousavi and M. Hashem Nehrir",
       "journal": "IEEE Transactions on Power Systems",
-      "volume": "29(4):1562\u20131572",
+      "volume": "29(4):1562–1572",
       "year": 2014,
-      "url": "http://ieeexplore.ieee.org/document/6850976/",
+      "url": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6717056",
       "pdf": "docs/JPaper2-2014.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftpwrs.2013.2296696)"
     },
@@ -892,7 +892,7 @@
       "location": "Romania",
       "year": 2014,
       "month": "Feb.",
-      "url": "http://ieeexplore.ieee.org/document/6666857/",
+      "url": "http://ieeexplore.ieee.org/document/6850976/",
       "pdf": "docs/CPaper1-2014.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Foptim.2014.6850976)"
     },
@@ -905,7 +905,7 @@
       "location": "Kansas city, USA",
       "year": 2013,
       "pages": "1-6",
-      "url": "http://ieeexplore.ieee.org/document/6497788/",
+      "url": "http://ieeexplore.ieee.org/document/6666857/",
       "pdf": "docs/CPaper1-2013.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fnaps.2013.6666857)"
     },
@@ -915,9 +915,9 @@
       "title": "Real-time central demand response for primary frequency regulation in microgrids",
       "authors": "S. Ali Pourmousavi and M. Hashem Nehrir",
       "journal": "IEEE Transactions on Smart Grid",
-      "volume": "3(4):1988\u20131996",
+      "volume": "3(4):1988–1996",
       "year": 2012,
-      "url": "http://ieeexplore.ieee.org/document/6336320/",
+      "url": "http://ieeexplore.ieee.org/document/6497788/",
       "pdf": "docs/JPaper1-2012.pdf",
       "notes": "[Article has an altmetric score of 6](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=35179410)"
     },
@@ -930,7 +930,7 @@
       "location": "Urbana-Champaign, USA",
       "year": 2012,
       "pages": "1-8",
-      "url": "http://ieeexplore.ieee.org/document/6336337/",
+      "url": "http://ieeexplore.ieee.org/document/6336320/",
       "pdf": "docs/CPaper1-2012.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fnaps.2012.6336320)"
     },
@@ -943,7 +943,7 @@
       "location": "Urbana-Champaign, USA",
       "year": 2012,
       "pages": "1-8",
-      "url": "http://www.actapress.com/Abstract.aspx?paperId=454326",
+      "url": "http://ieeexplore.ieee.org/document/6336337/",
       "pdf": "docs/CPaper2-2012.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fnaps.2012.6336337)"
     },
@@ -955,7 +955,7 @@
       "conference": "11th IASTED PES (EuroPES2012)",
       "location": "Naples, Italy",
       "year": 2012,
-      "url": "http://ieeexplore.ieee.org/document/6175707/",
+      "url": "http://www.actapress.com/Abstract.aspx?paperId=454326",
       "pdf": "docs/CPaper3-2012.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.2316%2Fp.2012.775-010)"
     },
@@ -968,19 +968,19 @@
       "location": "Washington D.C.",
       "year": 2012,
       "pages": "1-8",
-      "url": "http://www.sciencedirect.com/science/article/pii/S0196890410003638",
+      "url": "http://ieeexplore.ieee.org/document/6175707/",
       "pdf": "docs/CPaper4-2012.pdf",
       "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=35320483)"
     },
     {
       "id": "jpaper1-2011",
       "type": "journal",
-      "title": "Very short-term wind speed prediction: a new artificial neural network\u2013markov chain model",
+      "title": "Very short-term wind speed prediction: a new artificial neural network–markov chain model",
       "authors": "S. Ali Pourmousavi and M. M. Ardehali",
       "journal": "Energy Conversion and Management",
-      "volume": "52(1):738\u2013745",
+      "volume": "52(1):738–745",
       "year": 2011,
-      "url": "http://www.tandfonline.com/doi/abs/10.1080/15435075.2010.548887",
+      "url": "http://www.sciencedirect.com/science/article/pii/S0196890410003638",
       "pdf": "docs/JPaper1-2011.pdf",
       "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761384)"
     },
@@ -990,9 +990,9 @@
       "title": "An innovative hybrid algorithm for very short-term wind speed prediction using linear prediction and markov chain approach",
       "authors": "S. Ali Pourmousavi, G. H. Riahy, and D. Mazhari",
       "journal": "International Journal of Green Energy",
-      "volume": "8(2):147\u2013162",
+      "volume": "8(2):147–162",
       "year": 2011,
-      "url": "http://ieeexplore.ieee.org/document/6024876/",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/15435075.2010.548887",
       "pdf": "docs/JPaper2-2011.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1080%2F15435075.2010.548887)"
     },
@@ -1018,7 +1018,7 @@
       "location": "Anaheim, CA",
       "year": 2011,
       "pages": "1-6",
-      "url": "http://ieeexplore.ieee.org/document/5530418/?tp=&arnumber=5530418",
+      "url": "http://ieeexplore.ieee.org/document/6024876/",
       "pdf": "docs/CPaper2-2011.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fisgt.2011.5759181)"
     },
@@ -1028,9 +1028,9 @@
       "title": "Real-time energy management of a stand-alone hybrid wind-microturbine energy system using particle swarm optimization",
       "authors": "S. Ali Pourmousavi, M. Hashem Nehrir, Christopher M. Colson, and Caisheng Wang",
       "journal": "IEEE Transactions on Sustainable Energy",
-      "volume": "1(3):193\u2013201",
+      "volume": "1(3):193–201",
       "year": 2010,
-      "url": "http://ieeexplore.ieee.org/document/5588053/",
+      "url": "http://ieeexplore.ieee.org/document/5530418/?tp=&arnumber=5530418",
       "pdf": "docs/JPaper1-2010.pdf",
       "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761426)"
     },
@@ -1043,7 +1043,7 @@
       "location": "Minneapolis, MN",
       "year": 2010,
       "pages": "1-8",
-      "url": "http://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=1786609&pageStatus=0&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author",
+      "url": "http://ieeexplore.ieee.org/document/5588053/",
       "pdf": "docs/CPaper1-2010.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fpes.2010.5588053)"
     },
@@ -1058,7 +1058,7 @@
       "location": "Isfahan, Iran",
       "isbn": "978-864-8622-43-0",
       "notes": "(In Farsi)",
-      "url": "http://ieeexplore.ieee.org/document/4763386/",
+      "url": "http://opac.nlai.ir/opac-prod/search/briefListSearch.do?command=FULL_VIEW&id=1786609&pageStatus=0&sortKeyValue1=sortkey_title&sortKeyValue2=sortkey_author",
       "pdf": "docs/CPaper1-2008.pdf"
     },
     {
@@ -1070,7 +1070,7 @@
       "location": "Vancouver, BC, Canada",
       "year": 2008,
       "month": "October 6-7",
-      "url": "https://alipourmousavi.com/docs/CPaper1-2007.pdf",
+      "url": "http://ieeexplore.ieee.org/document/4763386/",
       "pdf": "docs/CPaper1-2008.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Fepc.2008.4763386)"
     },
