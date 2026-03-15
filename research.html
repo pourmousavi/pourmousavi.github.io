@@ -139,192 +139,50 @@
         <div class="section" id="flagship-projects" data-section-label="Flagship Projects">
             <h2 class="section-title">Flagship Projects</h2>
 
-            <!-- FRESNO Project -->
-            <div class="project-detail collapsible-project" id="fresno">
-                <div class="project-hero">
-                    <div class="project-acronym">FRESNO</div>
-                    <span class="project-status-badge">Completed</span>
+            <div class="research-grid">
+                <!-- FRESNO Project Card -->
+                <div class="research-card" id="fresno" data-project="fresno">
+                    <div class="research-header">
+                        <span class="research-label">Completed</span>
+                        <div class="project-acronym">FRESNO</div>
+                    </div>
+                    <div class="research-content">
+                        <h3>Flexibility Aggregator Simulation Platform</h3>
+                        <p class="project-name">Adelaide University + Watts Denmark</p>
+                        <p>Revolutionary platform for simulating advanced smart grid operations at distribution level. Facilitating massive renewable integration and electric vehicle adoption.</p>
+                        <button class="project-details-btn" data-project="fresno">View Details</button>
+                    </div>
                 </div>
-                <div class="project-body">
-                    <div class="project-summary">
-                        <h2 class="project-title">Flexibility Aggregator Simulation Platform</h2>
-                        <p class="project-subtitle">Enabling massive renewable integration through advanced grid simulation</p>
-                        <button class="expand-btn">Show More Details ↓</button>
-                    </div>
 
-                    <div class="project-details" style="display: none;">
-                    <div class="project-meta">
-                        <div class="meta-item">
-                            <h4>Duration</h4>
-                            <p>2021 - 2024</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>Funding Source</h4>
-                            <p>UofA RTP + Watts Denmark</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>PhD Students</h4>
-                            <p>3 Graduated</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>Research Output</h4>
-                            <p>15+ Publications</p>
-                        </div>
+                <!-- MOVE Project Card -->
+                <div class="research-card" id="move" data-project="move">
+                    <div class="research-header">
+                        <span class="research-label">Completed</span>
+                        <div class="project-acronym">MOVE</div>
                     </div>
-
-                    <div class="project-description">
-                        <p>The FRESNO project created a revolutionary platform to simulate, test, and verify advanced smart grid operation mechanisms at the distribution level. This groundbreaking platform facilitates studying larger amounts of renewable integration into the grid to provide a secure environment for larger adoption of electric vehicles by avoiding excessive capital cost of grid upgrades.</p>
-
-                        <p>Particularly beneficial for South Australia with the highest behind-the-meter PV and storage penetration per capita in the world, this project aligned perfectly with the SA government's plan to create the largest virtual power plant (VPP) in the world, consisting of 50,000 prosumers.</p>
-                    </div>
-
-                    <!-- Research Diagram Placeholder -->
-                    <div class="research-visual">
-                        <h3>Project Architecture</h3>
-                        <div class="research-visual-content">
-                            <div class="research-visual-placeholder">
-                                <span>📊</span>
-                                <p>FRESNO System Diagram</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="partners-section">
-                        <h3>Industry Partner</h3>
-                        <div class="partners-list">
-                            <span class="partner-badge">Watts (Denmark)</span>
-                        </div>
-                    </div>
-
-                    <div class="achievements">
-                        <h3>Key Achievements</h3>
-                        <div class="achievement-grid">
-                            <div class="achievement-card">
-                                <h4>Three PhD Graduates</h4>
-                                <p>Successfully supervised three PhD students to completion, all focused on different aspects of flexibility aggregation and prosumer modeling.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>IEEE Competition Success</h4>
-                                <p>Team FRESNO won 5th place in the international IEEE-CIS FORECAST+OPTIMIZE competition.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>International Collaboration</h4>
-                                <p>Students completed 6-month industry placements in Denmark with Watts, including round-trip tickets and additional €9K scholarship.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>High-Impact Publications</h4>
-                                <p>Multiple publications in top-tier journals including Renewable & Sustainable Energy Reviews and IEEE transactions.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Competitive Funding</h4>
-                                <p>PhD students received $10K p.a. top-up scholarship and $5K p.a. research allowance from industry partner.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Platform Development</h4>
-                                <p>Developed fully functional simulation platform for testing VPP operations and flexibility aggregation mechanisms.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="research-content">
+                        <h3>Mining Operational Vehicles Electrification</h3>
+                        <p class="project-name">FBICRC + BHP + IGO + 7 Partners</p>
+                        <p>Leading Australia's mining industry transition to battery-electric vehicles. $3.5M+ project with major mining partners achieving real-world impact.</p>
+                        <button class="project-details-btn" data-project="move">View Details</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- MOVE Project -->
-            <div class="project-detail collapsible-project" id="move">
-                <div class="project-hero">
-                    <div class="project-acronym">MOVE</div>
-                    <span class="project-status-badge">Completed</span>
+        <!-- Project Details Modal -->
+        <div class="project-modal" id="project-modal">
+            <div class="project-modal-overlay"></div>
+            <div class="project-modal-content">
+                <div class="project-modal-header">
+                    <div class="project-modal-title-wrapper">
+                        <div class="project-modal-acronym" id="modal-acronym"></div>
+                        <h2 id="modal-title"></h2>
+                    </div>
+                    <button class="project-modal-close" aria-label="Close">&times;</button>
                 </div>
-                <div class="project-body">
-                    <div class="project-summary">
-                        <h2 class="project-title">Mining Operational Vehicles Electrification</h2>
-                        <p class="project-subtitle">Transforming Australia's mining industry through battery-electric vehicles</p>
-                        <button class="expand-btn">Show More Details ↓</button>
-                    </div>
-
-                    <div class="project-details" style="display: none;">
-                    <div class="project-meta">
-                        <div class="meta-item">
-                            <h4>Duration</h4>
-                            <p>2020 - 2024 (3.5 years)</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>Total Funding</h4>
-                            <p>$3.5M+</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>Industry Partners</h4>
-                            <p>7+ Organizations</p>
-                        </div>
-                        <div class="meta-item">
-                            <h4>PhD Students</h4>
-                            <p>3 Active/Completing</p>
-                        </div>
-                    </div>
-
-                    <div class="project-description">
-                        <p>The MOVE project is a landmark industry-focused initiative providing the Australian mining industry with essential tools and information needed to transition operations to battery-supported electric vehicles (BEVs) and associated stationary machinery. The project addresses one of mining's most significant challenges: reducing the 30-50% of total mine site energy usage related to diesel-powered mining vehicles.</p>
-
-                        <p>This project enables the resources sector to reduce energy costs, improve reliability, enhance occupational health and safety (OHS), and significantly reduce the carbon footprint of mining production—addressing the industry's 4-7% contribution to global greenhouse gas emissions.</p>
-                    </div>
-
-                    <!-- Research Diagram Placeholder -->
-                    <div class="research-visual">
-                        <h3>Mine Electrification Framework</h3>
-                        <div class="research-visual-content">
-                            <div class="research-visual-placeholder">
-                                <span>⚡</span>
-                                <p>MOVE Project Framework Diagram</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="partners-section">
-                        <h3>Project Partners</h3>
-                        <div class="partners-list">
-                            <span class="partner-badge">Future Battery Industry CRC</span>
-                            <span class="partner-badge">BHP Nickel West</span>
-                            <span class="partner-badge">IGO Limited</span>
-                            <span class="partner-badge">Energetics Pty Ltd</span>
-                            <span class="partner-badge">Allkem</span>
-                            <span class="partner-badge">Multicom Resources</span>
-                            <span class="partner-badge">SA Dept Energy & Mining</span>
-                            <span class="partner-badge">QLD Dept Energy</span>
-                            <span class="partner-badge">MRIWA</span>
-                            <span class="partner-badge">University of WA</span>
-                        </div>
-                    </div>
-
-                    <div class="achievements">
-                        <h3>Key Achievements</h3>
-                        <div class="achievement-grid">
-                            <div class="achievement-card">
-                                <h4>All Deliverables Completed</h4>
-                                <p>Successfully delivered all project reports and technical deliverables to FBICRC and industry partners on schedule.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Major Media Coverage</h4>
-                                <p>Featured in Australian Mining Magazine and Nikkei Magazine (Japan) for leading-edge research in mining electrification.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Masterclass Delivery</h4>
-                                <p>Delivered Underground Mining Fleet Electrification Masterclass in Perth (2024) for industry professionals.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Industry Partnerships</h4>
-                                <p>Established strong collaborations with Australia's leading mining companies and government departments.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Technical Innovation</h4>
-                                <p>Developed comprehensive assessment, design, and operational frameworks for battery-electric mining vehicles.</p>
-                            </div>
-                            <div class="achievement-card">
-                                <h4>Environmental Impact</h4>
-                                <p>Created pathways for mining industry to significantly reduce carbon emissions and improve sustainability.</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                <div class="project-modal-body" id="project-modal-body">
+                    <!-- Content populated by JavaScript -->
                 </div>
             </div>
         </div>
