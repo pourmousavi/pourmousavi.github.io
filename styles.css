@@ -5029,3 +5029,366 @@ footer::before {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(245, 124, 0, 0.4);
 }
+
+/* ========================================
+   Eligibility Wizard Styles
+   ======================================== */
+
+.wizard-container {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 16px var(--shadow-light);
+    border: 1px solid var(--outline);
+    margin-top: 1.5rem;
+}
+
+/* Progress Bar */
+.wizard-progress {
+    height: 6px;
+    background: var(--background-alt);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.wizard-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 3px;
+    transition: width 0.4s ease;
+    width: 33%;
+}
+
+.wizard-progress-bar.complete {
+    background: linear-gradient(90deg, var(--success), var(--accent));
+}
+
+.wizard-progress-text {
+    font-size: 0.85rem;
+    color: var(--text-hint);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Wizard Steps */
+.wizard-content {
+    position: relative;
+    min-height: 300px;
+}
+
+.wizard-step {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.wizard-step.active {
+    display: block;
+}
+
+.wizard-step.exiting {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+.wizard-step.exiting-back {
+    animation: fadeOutBack 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes fadeOutBack {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+.wizard-step h3 {
+    font-size: 1.35rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.wizard-hint {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Wizard Options */
+.wizard-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wizard-option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+    background: var(--background);
+    border: 2px solid var(--outline);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.wizard-option:hover {
+    border-color: var(--primary);
+    background: var(--surface);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.wizard-option:active {
+    transform: translateY(0);
+}
+
+.wizard-option-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.wizard-option-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Back and Restart Buttons */
+.wizard-back,
+.wizard-restart {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 1px solid var(--outline);
+    border-radius: 6px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+}
+
+.wizard-back:hover,
+.wizard-restart:hover {
+    background: var(--background-alt);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.wizard-back::before {
+    content: '\2190';
+}
+
+.wizard-restart::before {
+    content: '\21BB';
+}
+
+/* Criteria List */
+.wizard-criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+}
+
+.wizard-criteria-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--background);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.wizard-criteria-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Outcome Cards */
+.wizard-outcome {
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wizard-outcome.success {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.08), rgba(34, 197, 94, 0.02));
+    border: 2px solid var(--success);
+}
+
+.wizard-outcome.warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(245, 158, 11, 0.02));
+    border: 2px solid var(--warning);
+}
+
+.wizard-outcome.error {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.02));
+    border: 2px solid var(--danger, #ef4444);
+}
+
+.wizard-outcome.info {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(59, 130, 246, 0.02));
+    border: 2px solid var(--primary);
+}
+
+.wizard-outcome h3 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.wizard-outcome.success h3 {
+    color: var(--success);
+}
+
+.wizard-outcome.warning h3 {
+    color: var(--warning);
+}
+
+.wizard-outcome.error h3 {
+    color: var(--danger, #ef4444);
+}
+
+.wizard-outcome.info h3 {
+    color: var(--primary);
+}
+
+.wizard-outcome > p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.wizard-outcome-details {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wizard-outcome-details h4 {
+    color: var(--text-primary);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.wizard-outcome-details h4:first-child {
+    margin-top: 0;
+}
+
+.wizard-outcome-details ul,
+.wizard-outcome-details ol {
+    margin-left: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.wizard-outcome-details li {
+    margin-bottom: 0.5rem;
+}
+
+.wizard-outcome-details ul ul {
+    margin-top: 0.5rem;
+}
+
+.wizard-outcome-details p {
+    color: var(--text-secondary);
+    margin: 0.75rem 0;
+}
+
+.wizard-outcome-details a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.wizard-outcome-details a:hover {
+    text-decoration: underline;
+}
+
+.wizard-outcome .btn {
+    margin-top: 0.5rem;
+}
+
+/* Other Sections in Outcome */
+.wizard-other-section {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--divider);
+}
+
+.wizard-other-section:last-of-type {
+    border-bottom: none;
+}
+
+.wizard-other-section h4 {
+    margin-top: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wizard-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .wizard-step h3 {
+        font-size: 1.15rem;
+    }
+
+    .wizard-option {
+        padding: 1rem 1.25rem;
+    }
+
+    .wizard-outcome {
+        padding: 1.5rem;
+    }
+
+    .wizard-outcome-details {
+        padding: 1rem;
+    }
+}
