@@ -98,8 +98,6 @@
 
         setTimeout(() => {
             nextStep.classList.add('active');
-            // Scroll wizard into view
-            nextStep.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }, currentStep ? 150 : 0);
 
         // Update progress
