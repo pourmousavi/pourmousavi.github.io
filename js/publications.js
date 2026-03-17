@@ -43,6 +43,25 @@ async function loadPublications() {
         buildFeaturedList();
         updateCounts();
         displayPublications();
+
+        // Scroll to target publication if URL has a hash
+        if (window.location.hash) {
+            const targetId = window.location.hash.substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                // Small delay to ensure DOM is fully rendered
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Highlight the target publication briefly
+                    targetElement.style.outline = '2px solid var(--primary-color)';
+                    targetElement.style.outlineOffset = '4px';
+                    setTimeout(() => {
+                        targetElement.style.outline = '';
+                        targetElement.style.outlineOffset = '';
+                    }, 2000);
+                }, 100);
+            }
+        }
     } catch (error) {
         console.error('Error loading publications:', error);
         document.getElementById('publications-container').innerHTML = 
@@ -210,7 +229,7 @@ function displayPublications() {
     let html = '<div class="publication-list">';
     
     filteredPubs.forEach(pub => {
-        html += `<div class="publication-item" data-type="${pub.type}">`;
+        html += `<div class="publication-item" id="${pub.id}" data-type="${pub.type}">`;
         
         // Main content on the left, metadata on the right
         html += '<div class="pub-content">';
