@@ -51,7 +51,16 @@ async function loadPublications() {
             if (targetElement) {
                 // Small delay to ensure DOM is fully rendered
                 setTimeout(() => {
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Account for fixed navbar (approx 80px) plus some padding
+                    const navbarHeight = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
                     // Highlight the target publication briefly
                     targetElement.style.outline = '2px solid var(--primary-color)';
                     targetElement.style.outlineOffset = '4px';
