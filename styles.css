@@ -173,10 +173,10 @@ body {
 }
 
 /* ========================================
-   Global Link Styles
+   Global Link Styles (inline text links only)
    ======================================== */
 
-a {
+a:not([class]) {
     color: var(--accent);
     text-decoration: none;
     background-image: linear-gradient(var(--primary-dark), var(--primary-dark));
@@ -186,15 +186,15 @@ a {
     transition: background-size 0.3s ease, color 0.2s ease;
 }
 
-a:hover {
+a:not([class]):hover {
     background-size: 100% 2px;
 }
 
-a:visited {
+a:not([class]):visited {
     color: var(--secondary);
 }
 
-a:visited:hover {
+a:not([class]):visited:hover {
     color: var(--secondary-dark);
     background-image: linear-gradient(var(--secondary-dark), var(--secondary-dark));
     background-size: 100% 2px;
