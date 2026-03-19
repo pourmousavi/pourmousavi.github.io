@@ -173,6 +173,34 @@ body {
 }
 
 /* ========================================
+   Global Link Styles
+   ======================================== */
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    background-image: linear-gradient(var(--primary-dark), var(--primary-dark));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.3s ease, color 0.2s ease;
+}
+
+a:hover {
+    background-size: 100% 2px;
+}
+
+a:visited {
+    color: var(--secondary);
+}
+
+a:visited:hover {
+    color: var(--secondary-dark);
+    background-image: linear-gradient(var(--secondary-dark), var(--secondary-dark));
+    background-size: 100% 2px;
+}
+
+/* ========================================
    Typography Hierarchy
    ======================================== */
 
