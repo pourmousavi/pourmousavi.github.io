@@ -8,7 +8,23 @@
       "Bash(git init:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(gh repo view:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git stash pop:*)",
+      "WebFetch(domain:adelaideuni.edu.au)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(open:*)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io status)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io diff styles.css)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io log --oneline -5)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io add styles.css)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io commit -m \"$\\(cat <<''EOF''\nAdd global link styles with animated underline effect\n\nStyle all links with theme colors and animated underline that grows on hover.\nVisited links show in muted grey-blue to indicate already visited.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io push)",
+      "Bash(git -C /Users/a1226603/Dropbox/Website/pourmousavi.github.io commit -m \"$\\(cat <<''EOF''\nFix global link styles to only apply to inline text links\n\nUse a:not\\([class]\\) selector so animated underline only affects plain\nlinks without CSS classes. Styled components like buttons and resource\nlinks retain their original appearance.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }
