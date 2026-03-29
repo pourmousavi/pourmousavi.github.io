@@ -11,6 +11,20 @@
   ],
   "news": [
     {
+      "id": "news-2026-004",
+      "date": "2026-03-05",
+      "type": "graduation",
+      "title": "Congratulations to Behnam Hashemian on submitting his PhD thesis — next stop: EPEC Group!",
+      "featured": true
+    },
+    {
+      "id": "news-2026-003",
+      "date": "2026-01-08",
+      "type": "graduation",
+      "title": "Congratulations to Dr. Yogesh Pipada Sunil Kumar on being awarded his PhD!",
+      "featured": true
+    },
+    {
       "id": "news-2026-002",
       "date": "2026-01-13",
       "type": "publication",
@@ -24,6 +38,13 @@
       "type": "publication",
       "title": "New paper, led by Shah, published on battery degradation modelling in planning studies in Journal of Energy Storage",
       "link": "publications.html#jpaper1-2026",
+      "featured": true
+    },
+    {
+      "id": "news-2025-002",
+      "date": "2025-11-25",
+      "type": "student",
+      "title": "Welcome Sepehr Karimi to the team — the PhD journey begins!",
       "featured": true
     },
     {
