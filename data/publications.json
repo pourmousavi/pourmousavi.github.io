@@ -9,7 +9,8 @@
       "year": 2026,
       "month": "February",
       "url": "https://www.sciencedirect.com/science/article/pii/S0142061526000943",
-      "pdf": "docs/JPaper3-2026.pdf"
+      "pdf": "docs/JPaper3-2026.pdf",
+      "audio": "docs/JPaper3-2026.mp3"
     },
     {
       "id": "jpaper2-2026",
@@ -20,7 +21,8 @@
       "year": 2026,
       "month": "March",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X26002410",
-      "pdf": "docs/JPaper2-2026.pdf"
+      "pdf": "docs/JPaper2-2026.pdf",
+      "audio": "docs/JPaper2-2026.mp3"
     },
     {
       "id": "jpaper1-2026",
@@ -31,7 +33,8 @@
       "year": 2026,
       "month": "March",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X26002392",
-      "pdf": "docs/JPaper1-2026.pdf"
+      "pdf": "docs/JPaper1-2026.pdf",
+      "audio": "docs/JPaper1-2026.mp3"
     },
     {
       "id": "cpaper2-2025",

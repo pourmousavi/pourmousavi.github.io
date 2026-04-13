@@ -307,9 +307,12 @@ function displayPublications() {
         if (pub.pdf) {
             html += `<a href="${pub.pdf}" target="_blank" class="pub-link" title="Download PDF">📄</a>`;
         }
+        if (pub.audio) {
+            html += `<button class="pub-link pub-audio-btn" title="Listen to Audio Summary" data-audio="${pub.audio}" data-title="${pub.title.replace(/"/g, '&quot;')}">🔊</button>`;
+        }
         html += '</div>';
         html += '</div>'; // Close pub-metadata
-        
+
         html += '</div>';
     });
 
@@ -360,6 +363,9 @@ function displayFeaturedPublications(pubs, container) {
         }
         if (pub.pdf) {
             html += `<a href="${pub.pdf}" target="_blank" class="featured-link" title="Download PDF">📄</a>`;
+        }
+        if (pub.audio) {
+            html += `<button class="featured-link pub-audio-btn" title="Listen to Audio Summary" data-audio="${pub.audio}" data-title="${pub.title.replace(/"/g, '&quot;')}">🔊</button>`;
         }
         html += '</div>';
         
@@ -413,4 +419,162 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load publications on page load
     loadPublications();
+
+    // --- Audio Player ---
+    const audio = new Audio();
+    const playerEl = document.getElementById('audio-player');
+    const playPauseBtn = document.getElementById('audio-play-pause');
+    const seekBar = document.getElementById('audio-seek');
+    const currentTimeEl = document.getElementById('audio-current-time');
+    const durationEl = document.getElementById('audio-duration');
+    const speedSelect = document.getElementById('audio-speed');
+    const volumeSlider = document.getElementById('audio-volume');
+    const downloadLink = document.getElementById('audio-download');
+    const closeBtn = document.getElementById('audio-close');
+    const paperTitleEl = document.getElementById('audio-paper-title');
+
+    function formatTime(seconds) {
+        if (!isFinite(seconds)) return '0:00';
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    const iconPlay = playPauseBtn.querySelector('.audio-icon-play');
+    const iconPause = playPauseBtn.querySelector('.audio-icon-pause');
+    const seekFill = document.getElementById('audio-seek-fill');
+
+    function showPlayIcon() {
+        iconPlay.style.display = '';
+        iconPause.style.display = 'none';
+    }
+    function showPauseIcon() {
+        iconPlay.style.display = 'none';
+        iconPause.style.display = '';
+    }
+
+    function openAudioPlayer(src, title) {
+        audio.src = src;
+        audio.load();
+        audio.volume = volumeSlider.value / 100;
+        audio.playbackRate = parseFloat(speedSelect.value);
+        paperTitleEl.textContent = title;
+        downloadLink.dataset.src = src;
+        seekFill.style.width = '0%';
+        playerEl.style.display = '';
+        document.body.classList.add('audio-player-visible');
+        audio.play().catch(() => {});
+        showPauseIcon();
+    }
+
+    // Event delegation for audio buttons
+    document.addEventListener('click', function(e) {
+        const btn = e.target.closest('.pub-audio-btn');
+        if (!btn) return;
+        e.preventDefault();
+        openAudioPlayer(btn.dataset.audio, btn.dataset.title);
+    });
+
+    // Play / Pause
+    playPauseBtn.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play().catch(() => {});
+            showPauseIcon();
+        } else {
+            audio.pause();
+            showPlayIcon();
+        }
+    });
+
+    // Time update + seek fill
+    audio.addEventListener('timeupdate', function() {
+        currentTimeEl.textContent = formatTime(audio.currentTime);
+        if (audio.duration) {
+            const pct = (audio.currentTime / audio.duration) * 100;
+            seekBar.value = pct;
+            seekFill.style.width = pct + '%';
+        }
+    });
+
+    audio.addEventListener('loadedmetadata', function() {
+        durationEl.textContent = formatTime(audio.duration);
+        seekBar.value = 0;
+    });
+
+    audio.addEventListener('ended', function() {
+        showPlayIcon();
+    });
+
+    // Seek
+    seekBar.addEventListener('input', function() {
+        if (audio.duration) {
+            audio.currentTime = (this.value / 100) * audio.duration;
+        }
+        seekFill.style.width = this.value + '%';
+    });
+
+    // Download
+    downloadLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const src = this.dataset.src;
+        if (!src) return;
+        fetch(src)
+            .then(res => res.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = src.split('/').pop();
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                URL.revokeObjectURL(url);
+            })
+            .catch(() => {});
+    });
+
+    // Speed
+    speedSelect.addEventListener('change', function() {
+        audio.playbackRate = parseFloat(this.value);
+    });
+
+    // Volume
+    volumeSlider.addEventListener('input', function() {
+        audio.volume = this.value / 100;
+        audio.muted = false;
+    });
+
+    // Mute toggle
+    const muteBtn = document.getElementById('audio-mute-btn');
+    if (muteBtn) {
+        muteBtn.addEventListener('click', function() {
+            audio.muted = !audio.muted;
+            this.style.opacity = audio.muted ? '0.4' : '1';
+        });
+    }
+
+    // Close
+    let closedByUser = false;
+    closeBtn.addEventListener('click', function() {
+        closedByUser = true;
+        audio.pause();
+        audio.src = '';
+        playerEl.style.display = 'none';
+        document.body.classList.remove('audio-player-visible');
+    });
+
+    // Error handling
+    audio.addEventListener('error', function() {
+        if (closedByUser) {
+            closedByUser = false;
+            return;
+        }
+        playerEl.style.display = 'none';
+        document.body.classList.remove('audio-player-visible');
+        const toast = document.createElement('div');
+        toast.className = 'audio-toast';
+        toast.textContent = 'Audio summary could not be loaded';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    });
 });
