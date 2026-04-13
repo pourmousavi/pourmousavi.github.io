@@ -69,7 +69,8 @@
       "year": 2026,
       "month": "February",
       "url": "https://ieeexplore.ieee.org/document/11231346",
-      "pdf": "docs/JPaper6-2025.pdf"
+      "pdf": "docs/JPaper6-2025.pdf",
+      "audio": "docs/JPaper6-2025.mp3"
     },
     {
       "id": "jpaper5-2025",
@@ -80,7 +81,8 @@
       "year": 2025,
       "month": "May",
       "url": "https://link.springer.com/article/10.1007/s11590-025-02214-4",
-      "pdf": "docs/JPaper5-2025.pdf"
+      "pdf": "docs/JPaper5-2025.pdf",
+      "audio": "docs/JPaper5-2025.mp3"
     },
     {
       "id": "jpaper4-2025",
@@ -92,7 +94,8 @@
       "year": 2025,
       "month": "Oct.",
       "url": "https://www.sciencedirect.com/science/article/pii/S0306261925009316",
-      "pdf": "docs/JPaper4-2025.pdf"
+      "pdf": "docs/JPaper4-2025.pdf",
+      "audio": "docs/JPaper4-2025.mp3"
     },
     {
       "id": "jpaper3-2025",
@@ -104,7 +107,8 @@
       "year": 2025,
       "month": "Sep.",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25018171",
-      "pdf": "docs/JPaper3-2025.pdf"
+      "pdf": "docs/JPaper3-2025.pdf",
+      "audio": "docs/JPaper3-2025.mp3"
     },
     {
       "id": "jpaper2-2025",
@@ -116,7 +120,8 @@
       "year": 2025,
       "month": "July",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X25012733",
-      "pdf": "docs/JPaper2-2025.pdf"
+      "pdf": "docs/JPaper2-2025.pdf",
+      "audio": "docs/JPaper2-2025.mp3"
     },
     {
       "id": "jpaper1-2025",
@@ -128,7 +133,8 @@
       "year": 2025,
       "month": "March",
       "url": "https://authors.elsevier.com/sd/article/S0378-7753(25)00052-7",
-      "pdf": "docs/JPaper1-2025.pdf"
+      "pdf": "docs/JPaper1-2025.pdf",
+      "audio": "docs/JPaper1-2025.mp3"
     },
     {
       "id": "cpaper2-2024",
@@ -152,7 +158,8 @@
       "year": 2024,
       "month": "May",
       "url": "https://www.sciencedirect.com/science/article/pii/S0952197624008601",
-      "pdf": "docs/JPaper7-2024.pdf"
+      "pdf": "docs/JPaper7-2024.pdf",
+      "audio": "docs/JPaper7-2024.mp3"
     },
     {
       "id": "cpaper1-2024",
@@ -176,7 +183,8 @@
       "year": 2024,
       "month": "May",
       "url": "https://www.sciencedirect.com/science/article/pii/S0378775324003793",
-      "pdf": "docs/JPaper6-2024.pdf"
+      "pdf": "docs/JPaper6-2024.pdf",
+      "audio": "docs/JPaper6-2024.mp3"
     },
     {
       "id": "jpaper5-2024",
@@ -188,7 +196,8 @@
       "year": 2024,
       "month": "March",
       "url": "https://ieeexplore.ieee.org/document/10485194",
-      "pdf": "docs/JPaper5-2024.pdf"
+      "pdf": "docs/JPaper5-2024.pdf",
+      "audio": "docs/JPaper5-2024.mp3"
     },
     {
       "id": "jpaper4-2024",
@@ -200,7 +209,8 @@
       "year": 2024,
       "month": "March",
       "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453315",
-      "pdf": "docs/JPaper4-2024.pdf"
+      "pdf": "docs/JPaper4-2024.pdf",
+      "audio": "docs/JPaper4-2024.mp3"
     },
     {
       "id": "jpaper3-2024",
@@ -212,7 +222,8 @@
       "year": 2024,
       "month": "March",
       "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10453332",
-      "pdf": "docs/JPaper3-2024.pdf"
+      "pdf": "docs/JPaper3-2024.pdf",
+      "audio": "docs/JPaper3-2024.mp3"
     },
     {
       "id": "jpaper2-2024",
@@ -225,6 +236,7 @@
       "month": "Feb. 21",
       "url": "https://www.cell.com/cell-reports-physical-science/fulltext/S2666-3864(24)00055-9",
       "pdf": "docs/JPaper2-2024.pdf",
+      "audio": "docs/JPaper2-2024.mp3",
       "notes": "[The Conversation article](https://theconversation.com/smart-meters-havent-delivered-the-promised-benefits-to-electricity-users-heres-a-way-to-fix-the-problems-225346)",
       "featured": true,
       "featuredReason": "Groundbreaking research on smart meter data resolution, appeared on the Conversation"
@@ -239,7 +251,8 @@
       "year": 2024,
       "month": "June",
       "url": "https://www.sciencedirect.com/science/article/pii/S0952197624000769",
-      "pdf": "docs/JPaper1-2024.pdf"
+      "pdf": "docs/JPaper1-2024.pdf",
+      "audio": "docs/JPaper1-2024.mp3"
     },
     {
       "id": "jpaper6-2023",
@@ -251,7 +264,8 @@
       "year": 2023,
       "month": "Dec.",
       "url": "https://www.sciencedirect.com/science/article/pii/S0169207023001358",
-      "pdf": "docs/JPaper6-2023.pdf"
+      "pdf": "docs/JPaper6-2023.pdf",
+      "audio": "docs/JPaper6-2023.mp3"
     },
     {
       "id": "jpaper5-2023",
@@ -263,7 +277,8 @@
       "year": 2023,
       "month": "Dec.",
       "url": "https://ieeexplore.ieee.org/document/10286047",
-      "pdf": "docs/JPaper5-2023.pdf"
+      "pdf": "docs/JPaper5-2023.pdf",
+      "audio": "docs/JPaper5-2023.mp3"
     },
     {
       "id": "jpaper4-2023",
@@ -276,6 +291,7 @@
       "month": "June",
       "url": "https://www.nature.com/articles/s41597-023-02271-3",
       "pdf": "docs/JPaper4-2023.pdf",
+      "audio": "docs/JPaper4-2023.mp3",
       "notes": "[Link to data and codes](https://doi.org/10.6084/m9.figshare.c.6383862.v1) [Link to blog post](https://engineeringcommunity.nature.com/posts/exploring-future-smart-grid-residential-electricity-usage-with-a-synthetic-dataset-of-danish-electricity-prosumers)",
       "featured": true,
       "featuredReason": "A one of a kind synthetic dataset and synthesization technique for household electricity consumer modelling"
@@ -290,7 +306,8 @@
       "year": 2023,
       "month": "September",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X23011386",
-      "pdf": "docs/JPaper3-2023.pdf"
+      "pdf": "docs/JPaper3-2023.pdf",
+      "audio": "docs/JPaper3-2023.mp3"
     },
     {
       "id": "jpaper2-2023",
@@ -302,7 +319,8 @@
       "year": 2023,
       "month": "June",
       "url": "https://www.sciencedirect.com/science/article/pii/S0378775323004020",
-      "pdf": "docs/JPaper2-2023.pdf"
+      "pdf": "docs/JPaper2-2023.pdf",
+      "audio": "docs/JPaper2-2023.mp3"
     },
     {
       "id": "jpaper1-2023",
@@ -314,7 +332,8 @@
       "year": 2023,
       "month": "March",
       "url": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00045-4",
-      "pdf": "docs/JPaper1-2023.pdf"
+      "pdf": "docs/JPaper1-2023.pdf",
+      "audio": "docs/JPaper1-2023.mp3"
     },
     {
       "id": "cpaper5-2022",
@@ -368,7 +387,8 @@
       "year": 2023,
       "month": "February",
       "url": "https://www.sciencedirect.com/science/article/abs/pii/S096014812201833X",
-      "pdf": "docs/JPaper7-2022.pdf"
+      "pdf": "docs/JPaper7-2022.pdf",
+      "audio": "docs/JPaper7-2022.mp3"
     },
     {
       "id": "jpaper6-2022",
@@ -380,7 +400,8 @@
       "year": 2023,
       "month": "February",
       "url": "https://www.sciencedirect.com/science/article/pii/S2352152X22023738",
-      "pdf": "docs/JPaper6-2022.pdf"
+      "pdf": "docs/JPaper6-2022.pdf",
+      "audio": "docs/JPaper6-2022.mp3"
     },
     {
       "id": "jpaper5-2022",
@@ -392,7 +413,8 @@
       "year": 2023,
       "month": "February",
       "url": "https://www.sciencedirect.com/science/article/pii/S0306261922016592",
-      "pdf": "docs/JPaper5-2022.pdf"
+      "pdf": "docs/JPaper5-2022.pdf",
+      "audio": "docs/JPaper5-2022.mp3"
     },
     {
       "id": "jpaper4-2022",
@@ -404,7 +426,8 @@
       "year": 2023,
       "month": "January",
       "url": "https://www.sciencedirect.com/science/article/pii/S0952197622005784",
-      "pdf": "docs/JPaper4-2022.pdf"
+      "pdf": "docs/JPaper4-2022.pdf",
+      "audio": "docs/JPaper4-2022.mp3"
     },
     {
       "id": "jpaper3-2022",
@@ -416,7 +439,8 @@
       "year": 2023,
       "month": "Feb",
       "url": "https://www.sciencedirect.com/science/article/pii/S0142061522006391",
-      "pdf": "docs/JPaper3-2022.pdf"
+      "pdf": "docs/JPaper3-2022.pdf",
+      "audio": "docs/JPaper3-2022.mp3"
     },
     {
       "id": "cpaper2-2022",
@@ -439,7 +463,8 @@
       "volume": "142:Part B",
       "year": 2022,
       "url": "https://www.sciencedirect.com/science/article/pii/S0142061522003805",
-      "pdf": "docs/JPaper2-2022.pdf"
+      "pdf": "docs/JPaper2-2022.pdf",
+      "audio": "docs/JPaper2-2022.mp3"
     },
     {
       "id": "cpaper1-2022",
@@ -462,7 +487,8 @@
       "volume": "165:112605",
       "year": 2022,
       "url": "https://authors.elsevier.com/sd/article/S1364-0321(22)00500-7",
-      "pdf": "docs/JPaper1-2022.pdf"
+      "pdf": "docs/JPaper1-2022.pdf",
+      "audio": "docs/JPaper1-2022.mp3"
     },
     {
       "id": "jpaper3-2021",
