@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-005",
+      "date": "2026-04-21",
+      "type": "publication",
+      "title": "New paper, led by Harrison, published on storage requirements for 100% renewable SA in Energy",
+      "link": "publications.html#jpaper5-2026",
+      "featured": true
+    },
+    {
       "id": "news-2026-004",
       "date": "2026-03-05",
       "type": "graduation",
