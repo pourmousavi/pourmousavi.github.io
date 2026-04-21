@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "id": "jpaper4-2026",
+      "type": "journal",
+      "title": "Multi-Nodal optimisation of energy storage requirements for 100% Renewable Energy Grid: A South Australian Case Study",
+      "authors": "Harrison Payne and Patrick Moriarty and Ali Pourmousavi Kani and Wen Soong and Kevin Peter",
+      "journal": "Energy",
+      "year": 2026,
+      "month": "April",
+      "url": "",
+      "pdf": "docs/JPaper4-2026.pdf",
+      "audio": "docs/JPaper4-2026.mp3"
+    },
+    {
       "id": "jpaper3-2026",
       "type": "journal",
       "title": "Coordinated sizing of battery and charging systems for underground mining electric trucks",
