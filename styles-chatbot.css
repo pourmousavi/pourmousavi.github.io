@@ -1,0 +1,332 @@
+/* =============================================
+   Publications chatbot widget
+   Inherits Material Blue palette from styles.css
+   ============================================= */
+
+.pc-hero {
+    margin: 0 0 1.5rem;
+    padding: 1.25rem 1.25rem 1rem;
+    background: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 1px 3px var(--shadow-light);
+    transition: box-shadow 0.2s;
+}
+
+.pc-hero:focus-within {
+    box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.pc-hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.pc-hero-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.pc-hero-hint {
+    font-size: 0.75rem;
+    color: var(--text-hint);
+}
+
+.pc-input-wrap {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.pc-input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: var(--text-primary);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.pc-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--focus-overlay);
+}
+
+.pc-input:disabled {
+    background: var(--background-alt);
+    cursor: wait;
+}
+
+.pc-send {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--surface);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.05s;
+}
+
+.pc-send:hover:not(:disabled) { background: var(--primary-dark); }
+.pc-send:active:not(:disabled) { transform: translateY(1px); }
+.pc-send:disabled { opacity: 0.5; cursor: wait; }
+
+.pc-suggestions {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.pc-suggestions button {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pc-suggestions button:hover {
+    background: var(--hover-overlay);
+    border-color: var(--primary-light);
+    color: var(--primary);
+}
+
+.pc-context {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: var(--background-alt);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.pc-context code {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.8rem;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    color: var(--primary);
+}
+
+.pc-clear-context {
+    margin-left: auto;
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: var(--primary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pc-thread {
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    max-height: 60vh;
+    overflow-y: auto;
+    background: var(--background-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+}
+
+.pc-msg {
+    padding: 0.7rem 0.9rem;
+    margin: 0.4rem 0;
+    border-radius: 6px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.pc-msg-user {
+    background: rgba(var(--primary-rgb), 0.08);
+    border-left: 3px solid var(--primary);
+}
+
+.pc-msg-assistant {
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+}
+
+.pc-msg-note {
+    background: transparent;
+    color: var(--text-hint);
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.pc-msg-loading {
+    display: inline-flex;
+    gap: 0.25rem;
+    padding: 0.7rem 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+}
+
+.pc-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    animation: pcDot 1.2s infinite ease-in-out;
+}
+
+.pc-dot:nth-child(2) { animation-delay: 0.15s; }
+.pc-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes pcDot {
+    0%, 80%, 100% { opacity: 0.3; transform: scale(0.85); }
+    40%           { opacity: 1;   transform: scale(1); }
+}
+
+.pc-msg code {
+    padding: 0.1rem 0.35rem;
+    font-size: 0.85em;
+    background: var(--background-alt);
+    border-radius: 3px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.pc-msg pre {
+    margin: 0.5rem 0;
+    padding: 0.6rem 0.8rem;
+    background: var(--background-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.85em;
+    line-height: 1.45;
+}
+
+.pc-msg pre code {
+    padding: 0;
+    background: transparent;
+}
+
+.pc-cites {
+    margin-top: 0.6rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--border-light);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.pc-cite-chip {
+    display: inline-block;
+    max-width: 100%;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.8rem;
+    color: var(--surface);
+    background: var(--primary);
+    text-decoration: none;
+    border-radius: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background 0.15s;
+}
+
+.pc-cite-chip:hover { background: var(--primary-dark); }
+
+.pc-bib-chip {
+    padding: 0.25rem 0.7rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.pc-bib-chip:hover {
+    background: var(--hover-overlay);
+    border-color: var(--primary-light);
+    color: var(--primary);
+}
+
+/* Per-paper "Ask" pill — sits inside .pub-links alongside 32×32 round buttons.
+   Pill shape, slightly taller than 32px round to fit text. */
+.pc-ask-btn {
+    height: 32px;
+    padding: 0 0.7rem;
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: var(--surface);
+    background: var(--primary);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+.pc-ask-btn:hover { background: var(--primary-dark); }
+
+.pc-quota {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-hint);
+    text-align: right;
+}
+
+/* Highlight effect when scrolling to a cited paper */
+.publication-item.pc-highlight {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+    transition: outline 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .pc-hero { padding: 1rem; }
+    .pc-suggestions button { font-size: 0.75rem; }
+    .pc-thread { max-height: 50vh; }
+    .pc-cite-chip { max-width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .publication-item.pc-highlight,
+    .pc-send,
+    .pc-suggestions button,
+    .pc-bib-chip,
+    .pc-ask-btn,
+    .pc-cite-chip,
+    .pc-input { transition: none; }
+    .pc-dot { animation: none; opacity: 0.6; }
+}

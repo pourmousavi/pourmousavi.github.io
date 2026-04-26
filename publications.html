@@ -26,6 +26,7 @@
     <meta property="og:image" content="https://alipourmousavi.com/images/publications-preview.jpg">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-chatbot.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -120,6 +121,9 @@
     </section>
 
     <div class="content">
+        <!-- Publications chatbot — populated by js/chatbot-widget.js. Update data-worker-url after deploy. -->
+        <div id="pc-chat-root" data-worker-url="https://papercast-chat.example.workers.dev"></div>
+
         <!-- Filter Controls -->
         <div class="filter-controls">
             <span class="filter-label">Filter by type:</span>
@@ -246,5 +250,6 @@
     <script src="js/common.js"></script>
     <script src="js/publications.js"></script>
     <script src="js/scholar.js"></script>
+    <script src="js/chatbot-widget.js" defer></script>
 </body>
 </html>
