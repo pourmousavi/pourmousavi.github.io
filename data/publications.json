@@ -534,7 +534,8 @@
       "volume": "131, 106912",
       "year": 2021,
       "url": "https://www.sciencedirect.com/science/article/pii/S0142061521001526",
-      "pdf": "docs/JPaper2-2021.pdf"
+      "pdf": "docs/JPaper2-2021.pdf",
+      "audio": "docs/JPaper2-2021.mp3"
     },
     {
       "id": "cpaper1-2021",
@@ -557,7 +558,8 @@
       "volume": "15(1)",
       "year": 2021,
       "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/rpg2.12008",
-      "pdf": "docs/JPaper2-2020.pdf"
+      "pdf": "docs/JPaper2-2020.pdf",
+      "audio": "docs/JPaper2-2020.mp3"
     },
     {
       "id": "cpaper1-2020",
@@ -771,7 +773,8 @@
       "year": 2018,
       "url": "http://ieeexplore.ieee.org/document/8290690/",
       "pdf": "docs/JPaper2-2018.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Faccess.2018.2805330)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Faccess.2018.2805330)",
+      "audio": "docs/JPaper2-2018.mp3"
     },
     {
       "id": "jpaper1-2018",
@@ -928,7 +931,8 @@
       "year": 2014,
       "url": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6717056",
       "pdf": "docs/JPaper2-2014.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftpwrs.2013.2296696)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftpwrs.2013.2296696)",
+      "audio": "docs/JPaper2-2014.mp3"
     },
     {
       "id": "cpaper1-2014",
@@ -1043,7 +1047,8 @@
       "year": 2011,
       "url": "http://www.tandfonline.com/doi/abs/10.1080/15435075.2010.548887",
       "pdf": "docs/JPaper2-2011.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1080%2F15435075.2010.548887)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1080%2F15435075.2010.548887)",
+      "audio":"docs/JPaper2-2011.mp3"
     },
     {
       "id": "cpaper1-2011",
