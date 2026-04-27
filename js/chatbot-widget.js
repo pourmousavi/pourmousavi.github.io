@@ -69,11 +69,20 @@
   // ---- Per-paper "Ask" buttons via DOM observation ----
   // publications.js renders entries asynchronously and re-renders on filter/search changes.
   // We observe the publications container and (re-)wire any unwired .publication-item.
+  // Only papers indexed in PaperCast's publish pipeline get an Ask button; the
+  // manifest at /data/chatbot-papers.json is the source of truth. If the
+  // manifest can't be loaded we fail open (wire all papers) so that an
+  // unrelated CDN hiccup doesn't silently disable the feature.
+  let indexedIds = null; // null → not yet loaded; Set → loaded; "all" → fail-open
   const wireAskButtons = function () {
     document.querySelectorAll(".publication-item:not([data-pc-wired])").forEach(function (item) {
-      item.setAttribute("data-pc-wired", "1");
       const id = item.id;
       if (!id) return;
+      // Until we know whether a paper is indexed, leave it unwired and let a
+      // later pass (after the manifest fetch resolves) handle it.
+      if (indexedIds === null) return;
+      item.setAttribute("data-pc-wired", "1");
+      if (indexedIds !== "all" && !indexedIds.has(id)) return;
       const linksWrap = item.querySelector(".pub-links");
       if (!linksWrap) return;
       const btn = document.createElement("button");
@@ -91,8 +100,22 @@
   if (pubsContainer) {
     const observer = new MutationObserver(wireAskButtons);
     observer.observe(pubsContainer, { childList: true, subtree: true });
-    wireAskButtons(); // initial sweep in case render already finished
   }
+
+  fetch("/data/chatbot-papers.json", { cache: "no-cache" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; })
+    .then(function (manifest) {
+      if (manifest && Array.isArray(manifest.ids)) {
+        indexedIds = new Set(manifest.ids);
+      } else {
+        // Manifest missing or malformed — fall back to current behaviour
+        // rather than hiding every Ask button.
+        console.warn("[pc-chat] chatbot-papers.json missing; wiring Ask on all papers.");
+        indexedIds = "all";
+      }
+      wireAskButtons();
+    });
 
   // ---- Submit ----
   async function submit() {
