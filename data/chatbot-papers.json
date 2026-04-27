@@ -1,7 +1,15 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-04-27T02:05:06.478199+00:00",
+  "generated_at": "2026-04-27T06:30:24.230363+00:00",
   "ids": [
+    "jpaper1-2010",
+    "jpaper1-2011",
+    "jpaper1-2012",
+    "jpaper1-2014",
+    "jpaper1-2016",
+    "jpaper1-2018",
+    "jpaper1-2019",
+    "jpaper1-2020",
     "jpaper1-2022",
     "jpaper1-2023",
     "jpaper1-2024",
@@ -31,6 +39,7 @@
     "jpaper6-2024",
     "jpaper6-2025",
     "jpaper7-2022",
-    "jpaper7-2024"
+    "jpaper7-2024",
+    "patent1"
   ]
 }

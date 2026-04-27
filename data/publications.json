@@ -591,7 +591,8 @@
       "volume": "15 (4):5267-5276",
       "year": 2021,
       "url": "https://ieeexplore.ieee.org/document/9166713",
-      "pdf": "docs/JPaper1-2020.pdf"
+      "pdf": "docs/JPaper1-2020.pdf",
+      "audio": "docs/JPaper1-2020.mp3"
     },
     {
       "id": "jpaper4-2018",
@@ -613,7 +614,8 @@
       "volume": "35(3), 1868-1880",
       "year": 2020,
       "url": "https://ieeexplore.ieee.org/document/8894550",
-      "pdf": "docs/JPaper1-2019.pdf"
+      "pdf": "docs/JPaper1-2019.pdf",
+      "audio": "docs/JPaper1-2019.mp3"
     },
     {
       "id": "cpaper3-2019",
@@ -781,7 +783,8 @@
       "year": 2018,
       "url": "https://authors.elsevier.com/c/1WKoA1M7~0YQ7B",
       "pdf": "docs/JPaper1-2018.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1016%2Fj.epsr.2017.12.024)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1016%2Fj.epsr.2017.12.024)",
+      "audio": "docs/JPaper1-2018.mp3"
     },
     {
       "id": "cpaper2-2017",
@@ -840,7 +843,8 @@
       "year": 2016,
       "url": "http://www.mdpi.com/1996-1073/9/1/34",
       "pdf": "docs/JPaper1-2016.pdf",
-      "notes": "[Article has an altmetric score of 1](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=12042549)"
+      "notes": "[Article has an altmetric score of 1](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=12042549)",
+      "audio": "docs/JPaper1-2016.mp3"
     },
     {
       "id": "cpaper1-2016",
@@ -898,7 +902,8 @@
       "year": 2015,
       "url": "http://ieeexplore.ieee.org/document/7017576/",
       "pdf": "docs/JPaper1-2015.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2014.2387068)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2014.2387068)",
+      "audio": "docs/JPaper1-2015.mp3"
     },
     {
       "id": "jpaper1-2014",
@@ -910,7 +915,8 @@
       "year": 2014,
       "url": "http://ieeexplore.ieee.org/document/6740919/",
       "pdf": "docs/JPaper1-2014.pdf",
-      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2013.2290084)"
+      "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1109%2Ftsg.2013.2290084)",
+      "audio": "docs/JPaper1-2014.mp3"
     },
     {
       "id": "jpaper2-2014",
@@ -960,7 +966,8 @@
       "year": 2012,
       "url": "http://ieeexplore.ieee.org/document/6497788/",
       "pdf": "docs/JPaper1-2012.pdf",
-      "notes": "[Article has an altmetric score of 6](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=35179410)"
+      "notes": "[Article has an altmetric score of 6](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=35179410)",
+      "audio": "docs/JPaper1-2012.mp3"
     },
     {
       "id": "cpaper1-2012",
@@ -1023,7 +1030,8 @@
       "year": 2011,
       "url": "http://www.sciencedirect.com/science/article/pii/S0196890410003638",
       "pdf": "docs/JPaper1-2011.pdf",
-      "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761384)"
+      "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761384)",
+      "audio":"docs/JPaper1-2011.mp3"
     },
     {
       "id": "jpaper2-2011",
@@ -1073,7 +1081,8 @@
       "year": 2010,
       "url": "http://ieeexplore.ieee.org/document/5530418/?tp=&arnumber=5530418",
       "pdf": "docs/JPaper1-2010.pdf",
-      "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761426)"
+      "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761426)",
+      "audio":"docs/JPaper1-2010.mp3"
     },
     {
       "id": "cpaper1-2010",
