@@ -3,41 +3,318 @@
    Inherits Material Blue palette from styles.css
    ============================================= */
 
-.pc-hero {
-    margin: 0 0 1.5rem;
-    padding: 1.25rem 1.25rem 1rem;
-    background: var(--surface);
-    border-radius: 8px;
-    border: 1px solid var(--border-light);
-    border-left: 4px solid var(--primary);
-    box-shadow: 0 1px 3px var(--shadow-light);
-    transition: box-shadow 0.2s;
+/* -----------------------------------------------------------
+   Persistent side trigger — desktop pull-tab pinned to right
+   ----------------------------------------------------------- */
+.pc-side-tab {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface);
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -2px 4px 12px var(--shadow-medium);
+    cursor: pointer;
+    z-index: 900;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.2s,
+                box-shadow 0.2s;
 }
 
-.pc-hero:focus-within {
-    box-shadow: 0 4px 12px var(--shadow-medium);
+.pc-side-tab svg {
+    width: 22px;
+    height: 22px;
 }
 
-.pc-hero-header {
+.pc-side-tab.pc-side-tab--visible {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pc-side-tab:hover {
+    transform: translateY(-50%) translateX(-4px);
+    box-shadow: -4px 6px 16px var(--shadow-dark);
+}
+
+.pc-side-tab:active {
+    transform: translateY(-50%) translateX(-2px);
+}
+
+@media (max-width: 767px) {
+    .pc-side-tab { display: none !important; }
+}
+
+/* -----------------------------------------------------------
+   Mobile FAB — phone-only, bottom-right, clears audio player
+   ----------------------------------------------------------- */
+.pc-fab {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface);
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px var(--shadow-dark);
+    cursor: pointer;
+    z-index: 900;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.85);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.2s,
+                box-shadow 0.2s;
+}
+
+.pc-fab svg {
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 767px) {
+    .pc-fab {
+        display: inline-flex;
+    }
+    .pc-fab.pc-fab--visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: scale(1);
+    }
+    /* Lift FAB above sticky audio player when active */
+    body.audio-player-visible .pc-fab {
+        bottom: calc(96px + env(safe-area-inset-bottom, 0px));
+    }
+}
+
+.pc-fab:active { transform: scale(0.94); }
+
+/* Hide both triggers when drawer is open (keyboard-focusable elements
+   inside an open dialog should not include the trigger that spawned it). */
+body.pc-drawer-open .pc-side-tab,
+body.pc-drawer-open .pc-fab {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* -----------------------------------------------------------
+   Drawer overlay
+   ----------------------------------------------------------- */
+.pc-drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 1500;
+    pointer-events: none;
+}
+
+.pc-drawer[hidden] { display: none; }
+
+.pc-drawer-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+    opacity: 0;
+    transition: opacity 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pc-drawer-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    height: 100dvh;
+    width: 420px;
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    flex-direction: column;
+    background: var(--surface);
+    box-shadow: -4px 0 24px var(--shadow-dark);
+    transform: translateX(100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
 }
 
-.pc-hero-title {
+.pc-drawer.pc-drawer--visible .pc-drawer-panel {
+    transform: translateX(0);
+}
+
+.pc-drawer.pc-drawer--visible .pc-drawer-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .pc-drawer-panel {
+        width: 60vw;
+        min-width: 380px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pc-drawer-panel {
+        width: 100vw;
+        box-shadow: none;
+    }
+    .pc-drawer-backdrop { display: none; }
+}
+
+body.pc-drawer-open {
+    overflow: hidden;
+}
+
+/* -----------------------------------------------------------
+   Drawer header — gradient bar with title + actions
+   ----------------------------------------------------------- */
+.pc-drawer-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 0.85rem 0.85rem 1.1rem;
+    color: var(--surface);
+    background: var(--gradient-primary);
+    flex-shrink: 0;
+}
+
+.pc-drawer-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
     font-size: 1rem;
     font-weight: 500;
+    color: var(--surface);
+}
+
+.pc-drawer-title svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.pc-drawer-title span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pc-drawer-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.pc-drawer-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    color: var(--surface);
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.15s, opacity 0.15s;
+}
+
+.pc-drawer-icon-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.pc-drawer-icon-btn:focus-visible {
+    outline: 2px solid var(--surface);
+    outline-offset: 2px;
+}
+
+.pc-drawer-icon-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pc-drawer-icon-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Download popover — anchors below the actions cluster */
+.pc-download-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 220px;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px var(--shadow-dark);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.pc-download-menu[hidden] { display: none; }
+
+.pc-download-menu button {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    text-align: left;
+    color: var(--text-primary);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.pc-download-menu button:hover {
+    background: var(--hover-overlay);
     color: var(--primary);
 }
 
-.pc-hero-hint {
-    font-size: 0.75rem;
-    color: var(--text-hint);
+.pc-download-menu button + button {
+    border-top: 1px solid var(--border-light);
 }
 
+/* -----------------------------------------------------------
+   Drawer body
+   ----------------------------------------------------------- */
+.pc-drawer-body {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem 1rem 1rem;
+    overflow-y: auto;
+    background: var(--surface);
+}
+
+.pc-hint {
+    font-size: 0.72rem;
+    color: var(--text-hint);
+    margin-bottom: 0.55rem;
+}
+
+/* -----------------------------------------------------------
+   Form, input, send (reused inside drawer)
+   ----------------------------------------------------------- */
 .pc-input-wrap {
     display: flex;
     gap: 0.5rem;
@@ -145,10 +422,12 @@
     text-decoration: underline;
 }
 
+/* Inside the drawer the thread fills remaining space rather than capping at 60vh */
 .pc-thread {
     margin-top: 0.75rem;
     padding: 0.5rem;
-    max-height: 60vh;
+    flex: 1;
+    min-height: 200px;
     overflow-y: auto;
     background: var(--background-alt);
     border: 1px solid var(--border-light);
@@ -278,8 +557,9 @@
     color: var(--primary);
 }
 
-/* Per-paper "Ask" pill — sits inside .pub-links alongside 32×32 round buttons.
-   Pill shape, slightly taller than 32px round to fit text. */
+/* -----------------------------------------------------------
+   Per-paper "Ask" pill — inside .pub-links alongside 32×32 round buttons
+   ----------------------------------------------------------- */
 .pc-ask-btn {
     height: 32px;
     padding: 0 0.7rem;
@@ -293,11 +573,16 @@
     transition: background 0.15s;
     display: inline-flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 0.3rem;
     flex-shrink: 0;
 }
 
 .pc-ask-btn:hover { background: var(--primary-dark); }
+
+.pc-ask-icon {
+    width: 14px;
+    height: 14px;
+}
 
 .pc-quota {
     margin-top: 0.5rem;
@@ -306,18 +591,22 @@
     text-align: right;
 }
 
-/* Highlight effect when scrolling to a cited paper */
+/* Highlight effect when a citation chip scrolls to its paper */
 .publication-item.pc-highlight {
     outline: 2px solid var(--primary);
     outline-offset: 4px;
     transition: outline 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .pc-hero { padding: 1rem; }
+/* -----------------------------------------------------------
+   Phone-specific drawer tweaks
+   ----------------------------------------------------------- */
+@media (max-width: 767px) {
+    .pc-drawer-body { padding: 0.85rem 0.85rem 1rem; }
     .pc-suggestions button { font-size: 0.75rem; }
-    .pc-thread { max-height: 50vh; }
     .pc-cite-chip { max-width: 100%; }
+    /* Use safe-area inset so the input doesn't sit on top of the iOS home indicator */
+    .pc-drawer-panel { padding-bottom: env(safe-area-inset-bottom, 0px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -327,6 +616,11 @@
     .pc-bib-chip,
     .pc-ask-btn,
     .pc-cite-chip,
-    .pc-input { transition: none; }
+    .pc-input,
+    .pc-side-tab,
+    .pc-fab,
+    .pc-drawer-panel,
+    .pc-drawer-backdrop,
+    .pc-drawer-icon-btn { transition: none; }
     .pc-dot { animation: none; opacity: 0.6; }
 }
