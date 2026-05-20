@@ -19,6 +19,9 @@
     let activeSection = null;
     let isMobile = window.innerWidth <= CONFIG.mobileBreakpoint;
     let observer = null;
+    let userHasInteracted = false;
+    let suppressUrlUpdate = false;
+    let suppressUrlTimeout = null;
 
     // DOM Elements
     let dotsContainer = null;
@@ -42,6 +45,26 @@
         setupEventListeners();
         updateActiveSection();
         handleResize();
+        honourInitialHash();
+    }
+
+    /**
+     * If the page loaded with a hash that matches a known section, jump there
+     * with the correct fixed-header offset applied. Scroll-margin-top in CSS
+     * covers most cases, but calling scrollToSection() keeps a single source
+     * of truth for the offset value.
+     */
+    function honourInitialHash() {
+        const hash = location.hash;
+        if (!hash || hash.length < 2) return;
+
+        const id = hash.slice(1);
+        const target = sections.find(s => s.id === id);
+        if (!target) return;
+
+        // Use 'auto' to avoid a long smooth scroll on initial load.
+        // writeUrl:false because the hash is already correct.
+        scrollToSection(id, { writeUrl: false, behavior: 'auto' });
     }
 
     /**
@@ -175,14 +198,50 @@
     /**
      * Scroll to a section by ID
      */
-    function scrollToSection(id) {
+    function scrollToSection(id, options) {
         const section = document.getElementById(id);
-        if (section) {
-            const top = section.getBoundingClientRect().top + window.pageYOffset - CONFIG.scrollOffset;
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth'
-            });
+        if (!section) return;
+
+        const writeUrl = !options || options.writeUrl !== false;
+        const behavior = options && options.behavior ? options.behavior : 'smooth';
+
+        userHasInteracted = true;
+
+        // Suppress scroll-driven URL updates while the smooth scroll is in flight,
+        // otherwise the IntersectionObserver fires as we pass through sections and
+        // overwrites the hash we just pushed.
+        suppressUrlUpdate = true;
+        clearTimeout(suppressUrlTimeout);
+        suppressUrlTimeout = setTimeout(() => { suppressUrlUpdate = false; }, 700);
+
+        const top = section.getBoundingClientRect().top + window.pageYOffset - CONFIG.scrollOffset;
+        window.scrollTo({ top: top, behavior: behavior });
+
+        if (writeUrl && location.hash !== '#' + id) {
+            history.pushState(null, '', '#' + id);
+        }
+    }
+
+    /**
+     * Reflect the active section in the address bar.
+     * - replaceState (not pushState) so scroll doesn't flood the back stack.
+     * - Strips the hash entirely when the user is at the very top of the page.
+     * - No-ops until the user has actually interacted, so a fresh page load
+     *   doesn't append a hash for the auto-selected first section.
+     */
+    function updateUrlForActiveSection(id) {
+        if (!userHasInteracted || suppressUrlUpdate) return;
+
+        if (window.pageYOffset < CONFIG.scrollOffset) {
+            if (location.hash) {
+                history.replaceState(null, '', location.pathname + location.search);
+            }
+            return;
+        }
+
+        const newHash = '#' + id;
+        if (location.hash !== newHash) {
+            history.replaceState(null, '', newHash);
         }
     }
 
@@ -244,6 +303,8 @@
                 chip.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             }
         });
+
+        updateUrlForActiveSection(id);
     }
 
     /**
@@ -276,6 +337,12 @@
 
         if (barContainer) {
             barContainer.classList.toggle('visible', shouldShowBar && isMobile);
+        }
+
+        // Any real scroll past the offset counts as user interaction, which
+        // unlocks scroll-driven URL updates (see updateUrlForActiveSection).
+        if (!userHasInteracted && scrollTop > CONFIG.scrollOffset) {
+            userHasInteracted = true;
         }
     }
 
@@ -332,6 +399,17 @@
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             document.documentElement.style.setProperty('--section-nav-transition', '0s');
         }
+
+        // Back/forward and manual URL-bar hash edits: scroll to the target
+        // with the correct offset, but don't re-write the URL.
+        window.addEventListener('hashchange', () => {
+            const hash = location.hash;
+            if (!hash || hash.length < 2) return;
+            const id = hash.slice(1);
+            if (sections.find(s => s.id === id)) {
+                scrollToSection(id, { writeUrl: false });
+            }
+        });
     }
 
     // Initialize when DOM is ready

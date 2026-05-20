@@ -4720,6 +4720,12 @@ footer::before {
     --section-nav-transition: 0.3s;
 }
 
+/* Offset native anchor jumps (e.g. opening team.html#alumni) below the
+   fixed header. Matches CONFIG.scrollOffset in js/section-nav.js. */
+[data-section-label] {
+    scroll-margin-top: 80px;
+}
+
 .section-nav {
     /* Container for both navigation types */
 }
