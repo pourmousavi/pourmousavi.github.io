@@ -11,6 +11,22 @@
   ],
   "news": [
     {
+      "id": "news-2026-007",
+      "date": "2026-04-23",
+      "type": "media",
+      "title": "Will be speaking and attending a panel discussion at AI and Sustainable Futures in the Indo-Pacific event, organised by France Embassy in Australia",
+      "link": "https://readnow.isentia.com/Temp/217419-1358024557/1208737080_20270617.pdf",
+      "featured": true
+    },
+    {
+      "id": "news-2026-006",
+      "date": "2026-04-17",
+      "type": "media",
+      "title": "Appeared on an article about on Murray Pioneer about a smarter path to 100% renewable energy, by Sebastian Calderon",
+      "link": "https://readnow.isentia.com/Temp/217419-1358024557/1208737080_20270617.pdf",
+      "featured": true
+    },
+    {
       "id": "news-2026-005",
       "date": "2026-04-21",
       "type": "publication",
