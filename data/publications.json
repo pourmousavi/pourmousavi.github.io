@@ -1,6 +1,18 @@
 {
   "publications": [
     {
+      "id": "cpaper2-2026",
+      "type": "conference",
+      "title": "Design and Simulation of a Battery Electric Vehicle Model for Underground Mining Applications with Synthetic Data Generation for Machine Learning Model",
+      "authors": "Tamsa and Arpit Garg and Wen Soong and Ali Pourmousavi Kani",
+      "conference": "IEEE Conference on Artificial Intelligence (CAI)",
+      "year": 2026,
+      "month": "May",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11536244",
+      "pdf": "docs/CPaper2-2026.pdf",
+      "audio": ""
+    },
+    {
       "id": "jpaper4-2026",
       "type": "journal",
       "title": "Multi-Nodal optimisation of energy storage requirements for 100% Renewable Energy Grid: A South Australian Case Study",

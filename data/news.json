@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-008",
+      "date": "2026-06-25",
+      "type": "publication",
+      "title": "New paper, led by Tamsa, presented and now available on IEEE Explore on electric haul truck modelling",
+      "link": "publications.html#cpaper2-2026",
+      "featured": true
+    },
+    {
       "id": "news-2026-007",
       "date": "2026-06-23",
       "type": "media",
