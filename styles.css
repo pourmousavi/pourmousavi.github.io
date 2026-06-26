@@ -4295,6 +4295,14 @@ footer::before {
     transition: all 0.3s ease;
     display: inline-block;
     position: relative;
+    background-image: linear-gradient(var(--primary-dark), var(--primary-dark));
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.footer-links a:hover {
+    background-size: 100% 2px;
 }
 
 .footer-links a:visited {
