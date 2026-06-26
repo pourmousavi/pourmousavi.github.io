@@ -4301,7 +4301,8 @@ footer::before {
     color: rgba(255,255,255,0.7);
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links a:visited:hover {
     color: var(--surface);
     transform: translateX(4px);
 }
