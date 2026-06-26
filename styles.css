@@ -4297,6 +4297,10 @@ footer::before {
     position: relative;
 }
 
+.footer-links a:visited {
+    color: rgba(255,255,255,0.7);
+}
+
 .footer-links a:hover {
     color: var(--surface);
     transform: translateX(4px);
