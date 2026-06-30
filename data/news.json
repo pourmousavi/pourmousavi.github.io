@@ -11,7 +11,7 @@
   ],
   "news": [
     {
-      "id": "news-2026-009",
+      "id": "news-2026-010",
       "date": "2026-06-30",
       "type": "student",
       "title": "Welcome to the team, Tohid, as our newest PhD student.",
@@ -19,7 +19,7 @@
       "featured": true
     },
     {
-      "id": "news-2026-008",
+      "id": "news-2026-009",
       "date": "2026-06-25",
       "type": "publication",
       "title": "New paper, led by Tamsa, presented and now available on IEEE Explore on electric haul truck modelling",
@@ -27,7 +27,7 @@
       "featured": true
     },
     {
-      "id": "news-2026-007",
+      "id": "news-2026-008",
       "date": "2026-06-23",
       "type": "media",
       "title": "Will be speaking and attending a panel discussion at AI and Sustainable Futures in the Indo-Pacific event, organised by France Embassy in Australia",
@@ -35,11 +35,19 @@
       "featured": true
     },
     {
-      "id": "news-2026-006",
+      "id": "news-2026-007",
       "date": "2026-06-17",
       "type": "media",
       "title": "Appeared on an article about on Murray Pioneer about a smarter path to 100% renewable energy, by Sebastian Calderon",
       "link": "https://readnow.isentia.com/Temp/217419-1358024557/1208737080_20270617.pdf",
+      "featured": true
+    },
+    {
+      "id": "news-2026-006",
+      "date": "2026-05-05",
+      "type": "grant",
+      "title": "Slingshot grant awarded by AU's Research Commercialisation to develop 'MOVE: Tools for Mine Site Electrification'",
+      "link": "",
       "featured": true
     },
     {
