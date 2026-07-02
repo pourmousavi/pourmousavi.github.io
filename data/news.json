@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-011",
+      "date": "2026-07-01",
+      "type": "graduation",
+      "title": "Behnam has successfully completed his PhD.  Congratulations, Dr Behnam.",
+      "link": "",
+      "featured": true
+    },
+    {
       "id": "news-2026-010",
       "date": "2026-06-30",
       "type": "student",
