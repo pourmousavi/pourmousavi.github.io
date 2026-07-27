@@ -81,7 +81,17 @@ def extract_total_citations(d):
 
 
 def extract_hindex(d):
-    # Common structure: d['h_index'] or in d['indices']['h_index']
+    # Actual SerpAPI shape: d['cited_by']['table'][1]['h_index']['all']
+    try:
+        for row in d.get("cited_by", {}).get("table", []):
+            h = row.get("h_index")
+            if isinstance(h, dict) and "all" in h:
+                return int(h["all"])
+            if isinstance(h, (int, str)):
+                return int(h)
+    except Exception:
+        pass
+    # Legacy/fallback shapes
     try:
         if "h_index" in d:
             return int(d["h_index"])
