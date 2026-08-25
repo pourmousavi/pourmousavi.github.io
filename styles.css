@@ -5694,6 +5694,10 @@ footer::before {
     content: '\21BB';
 }
 
+.wizard-back + .wizard-restart {
+    margin-left: 0.75rem;
+}
+
 /* Criteria List */
 .wizard-criteria-list {
     display: flex;
