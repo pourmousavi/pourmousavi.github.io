@@ -9,33 +9,20 @@
     // Step flow mapping
     const stepFlow = {
         '1': { total: 3, current: 1 },
-        '2-phd': { total: 4, current: 2 },
-        '2-mres': { total: 3, current: 2 },
-        '3-phd-domestic': { total: 3, current: 3 },
-        '3-phd-international': { total: 4, current: 3 },
-        '4-phd-intl-masters': { total: 4, current: 4 },
-        '4-phd-intl-undergrad': { total: 4, current: 4 },
-        'outcome-announced': { total: 3, current: 3, isOutcome: true },
-        'outcome-domestic-eligible': { total: 3, current: 3, isOutcome: true },
-        'outcome-domestic-mres': { total: 3, current: 3, isOutcome: true },
-        'outcome-intl-eligible': { total: 4, current: 4, isOutcome: true },
-        'outcome-intl-wildcard': { total: 4, current: 4, isOutcome: true },
-        'outcome-intl-not-eligible': { total: 4, current: 4, isOutcome: true },
-        'outcome-mres-domestic': { total: 3, current: 3, isOutcome: true },
-        'outcome-mres-international': { total: 3, current: 3, isOutcome: true },
+        '2-scholarship': { total: 3, current: 2 },
+        '3-merit': { total: 3, current: 3 },
+        'outcome-announced': { total: 2, current: 2, isOutcome: true },
+        'outcome-contact': { total: 3, current: 3, isOutcome: true },
+        'outcome-watch': { total: 3, current: 3, isOutcome: true },
+        'outcome-below-threshold': { total: 3, current: 3, isOutcome: true },
         'outcome-other': { total: 2, current: 2, isOutcome: true }
     };
 
     // Navigation mapping for next steps
     const nextStepMap = {
         'announced': 'outcome-announced',
-        'phd': '2-phd',
-        'mres': '2-mres',
-        'other': 'outcome-other',
-        'phd-domestic': '3-phd-domestic',
-        'phd-international': '3-phd-international',
-        'mres-domestic': 'outcome-mres-domestic',
-        'mres-international': 'outcome-mres-international'
+        'scholarship': '2-scholarship',
+        'other': 'outcome-other'
     };
 
     // History stack for back navigation
