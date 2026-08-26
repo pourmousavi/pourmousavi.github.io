@@ -3926,11 +3926,15 @@ body.audio-player-visible {
 }
 
 .section-content li::before {
-    content: "•";
+    content: "";
     position: absolute;
-    left: 0.5rem;
-    color: var(--accent);
-    font-size: 1.5rem;
+    left: 0.6rem;
+    top: calc(0.75rem + 0.8em);
+    transform: translateY(-50%);
+    width: 0.45em;
+    height: 0.45em;
+    border-radius: 50%;
+    background: var(--accent);
 }
 
 .section-content a {
