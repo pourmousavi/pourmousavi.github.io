@@ -3941,6 +3941,141 @@ body.audio-player-visible {
     color: var(--accent);
 }
 
+/* Sample Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-fallback {
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    font: inherit;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+    box-shadow: 0 8px 24px var(--shadow-medium);
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.4;
+}
+
+.project-card-areas {
+    font-size: 0.8rem;
+    color: var(--text-hint);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.project-card-summary {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.project-card-more {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.project-card-more::after {
+    content: ' \2192';
+}
+
+/* Project dialog */
+.project-dialog {
+    width: min(640px, calc(100vw - 2rem));
+    max-height: min(80vh, 720px);
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text-secondary);
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+}
+
+.project-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.project-dialog h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.35;
+    padding-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-dialog-areas {
+    font-size: 0.8rem;
+    color: var(--text-hint);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+}
+
+.project-dialog-body p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.project-dialog-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.project-dialog-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-hint);
+    cursor: pointer;
+}
+
+.project-dialog-close:hover {
+    background: var(--background-alt);
+    color: var(--text-primary);
+}
+
+
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

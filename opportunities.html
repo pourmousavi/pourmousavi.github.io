@@ -92,7 +92,7 @@
                 <ul>
                     <li><strong>A funded project position.</strong> When I hold PhD or postdoc funding from a grant (ARC Linkage, ARC Discovery, industry or other sources), I recruit openly under the University's rules, including international candidates. These positions are <strong>always advertised publicly</strong> - on the Adelaide University website, on my <a href="https://www.linkedin.com/in/alipourmousavi/" target="_blank">LinkedIn page</a>, and on other relevant platforms.</li>
                     <li><strong>A Signature Research Theme (SRT) scholarship round.</strong> If I win a scholarship through an <a href="https://adelaide.edu.au/research/research-degrees/research-scholarships/" target="_blank">SRT Project Round</a> (up to twice a year), I can recruit any qualified student, international candidates included. Successful projects are advertised on the University's <a href="https://adelaide.edu.au/research/research-degrees/research-projects/" target="_blank">research projects page</a> and announced on my LinkedIn.</li>
-                    <li><strong>The Graduate Research Talent Scheme.</strong> Three rounds a year, open to domestic applicants and to international applicants who have completed a degree at an Australian or New Zealand university. <strong>This is the only pathway where contacting me before an advertisement appears is useful.</strong></li>
+                    <li><strong>The Graduate Research Talent Scheme.</strong> Three rounds a year, open to domestic applicants and to international applicants who have completed a degree at an Australian or New Zealand university. <strong>This is the only pathway where contacting me before an advertisement appears is useful.</strong> See the <a href="#sample-projects">sample projects</a> below for the kind of topic to propose.</li>
                 </ul>
                 <p>If the Graduate Research Talent Scheme does not apply to you, there is nothing for me to assess in advance - the openings simply do not exist until they are announced. Following my LinkedIn and the University's <a href="https://adelaide.edu.au/research/research-degrees/research-scholarships/" target="_blank">scholarship page</a> is the fastest way to hear about them.</p>
                 <p>Use the checker below to see which pathway applies to you.</p>
@@ -219,6 +219,7 @@
                                 <h4>Before you email</h4>
                                 <ul>
                                     <li>Check that your background is <a href="#research-areas">relevant to our research areas</a>, by subject matter or by method</li>
+                                    <li>Pick one of the <a href="#sample-projects">sample projects</a> to propose, or bring a topic of your own</li>
                                     <li>There are <strong>three rounds each year</strong> - see the <a href="https://adelaide.edu.au/research/research-degrees/research-scholarships/" target="_blank">scholarship page</a> for current dates and full conditions</li>
                                     <li>Scholarships are available for the PhD and MPhil; the Master of Research has its own <a href="https://adelaide.edu.au/research/research-degrees/research-scholarships/" target="_blank">separate scholarships</a></li>
                                     <li>If you studied in a language other than English, check the <a href="https://adelaide.edu.au/study/international-students/how-to-apply/entry-requirements/english-language-proficiency/" target="_blank">English language requirements</a> - they cannot be waived</li>
@@ -342,6 +343,31 @@
             </div>
         </div>
 
+        <!-- Sample Projects -->
+        <div class="section" id="sample-projects" data-section-label="Sample Projects">
+            <h2 class="section-title">Sample Projects</h2>
+            <div class="section-content">
+                <p>These are <strong>project ideas, not funded positions</strong>. All five are PhD projects listed publicly on the University's research projects site, under the Sustainable Green Transition research theme, and they show the kind of work my team does. If the checker above says you are eligible for the Graduate Research Talent Scheme, proposing one of these is a good way to open your email to me - and I am just as happy to hear a topic of your own that fits <a href="#research-areas">our research areas</a>.</p>
+
+                <div class="project-grid" id="projectGrid">
+                    <p class="project-fallback">The current list of projects is on the University's <a href="https://adelaide.edu.au/research/research-degrees/research-projects/" target="_blank">research projects page</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <dialog id="projectDialog" class="project-dialog" aria-labelledby="projectDialogTitle">
+            <form method="dialog">
+                <button class="project-dialog-close" aria-label="Close">&times;</button>
+            </form>
+            <h3 id="projectDialogTitle"></h3>
+            <p class="project-dialog-areas" id="projectDialogAreas" hidden></p>
+            <div class="project-dialog-body" id="projectDialogBody"></div>
+            <div class="project-dialog-actions">
+                <a class="btn btn-secondary" id="projectDialogLink" target="_blank" hidden>View on the University site</a>
+                <a class="btn btn-primary ob-email" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Email Me About This Project" data-email-subject="Enquiry about a sample research project"></a>
+            </div>
+        </dialog>
+
         <!-- Research Areas -->
         <div class="section" id="research-areas" data-section-label="Research Areas">
             <h2 class="section-title">Our Research Areas</h2>
@@ -439,5 +465,6 @@
     <script src="js/common.js"></script>
     <script src="js/section-nav.js"></script>
     <script src="js/eligibility-wizard.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>

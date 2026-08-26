@@ -1,0 +1,48 @@
+{
+  "_comment": "Sample research projects shown on opportunities.html. These are UNFUNDED project ideas, not advertised positions - they exist to show prospective Talent Scheme applicants the kind of work the group does. The section falls back to a link to the University's research projects page if this file is empty or fails to load.",
+  "_fields": {
+    "id": "lowercase kebab-case, unique, stable (used as the anchor for deep links)",
+    "title": "Project title as it appears on the University's research projects list",
+    "summary": "One or two sentences shown on the card. Keep it short - the full text lives in description.",
+    "areas": "Optional array of short topic labels shown under the title, e.g. [\"Battery storage\", \"Optimisation\"]",
+    "description": "Full description. Separate paragraphs with a blank line (\\n\\n).",
+    "url": "Optional link to the project's page on the University's research projects list"
+  },
+  "projects": [
+    {
+      "id": "consumer-privacy-data-engineering",
+      "title": "Protecting Electricity Consumers against Re-Identification, Behavioural Exploitation, and Malicious Data Engineering",
+      "areas": ["Smart meter data", "Privacy", "Cyber security"],
+      "summary": "A shape-based similarity framework that splits consumption patterns from temporal indices, so smart meter data cannot be re-identified from either half alone.",
+      "description": "This project addresses the critical vulnerability in Australia's smart meter rollout where 10.9 million households face re-identification and behavioural exploitation from electricity consumption data. The key challenge is developing privacy protection that maintains data utility for grid operations while preventing malicious data engineering.\n\nInnovation: We propose the world's first shape based similarity framework for electricity consumer identity management using dictionary-based compression. This novel approach separates high-resolution consumption patterns (stored locally without timestamps) from temporal indices (stored remotely), making re-identification impossible from either dataset alone.\n\nMethodology: The project employs iterative algorithm development: (1) vulnerability analysis, (2) static compression model development, (3) dynamic enhancement using memory-efficient similarity identification, (4) validation on 5,000-consumer ACT dataset, and (5) real-world implementation on edge computing devices.\n\nImpact: This research simultaneously solves bandwidth/warehousing costs for utilities while protecting national security. The framework applies beyond residential consumers to sensitive Defence manufacturing sites, strengthening Australia's critical infrastructure resilience. The interdisciplinary approach provides exceptional training opportunities spanning cybersecurity, energy systems, and data science - preparing graduates for high impact careers in Australia's digital energy transition."
+    },
+    {
+      "id": "predictability-theory-renewables",
+      "title": "Beyond forecasting: Predictability theory for cost-effective renewable energy integration",
+      "areas": ["Renewable integration", "Forecasting", "Battery sizing"],
+      "summary": "Forecast error costs wind and solar farms over 20% of energy revenue. This project builds predictability metrics, battery sizing methods and real-time strategies to close that gap.",
+      "description": "This groundbreaking project addresses Australia's critical renewable energy challenge: forecast inaccuracies costing wind and solar farms over 20% of energy revenue through market penalties. With AEMO's new Frequency Performance Payments expected to increase these penalties, traditional forecasting improvements are proving insufficient.\n\nThe project will develop robust predictability metrics for renewable systems, create optimised battery sizing methodologies, and implement real-time operation strategies. This paradigm shift directly supports Australia's decarbonisation goals by reducing investment barriers, improving grid stability, and lowering electricity costs whilst facilitating higher renewable penetration across the National Electricity Market.\n\nExpected outcomes include transformative battery sizing techniques, enhanced renewable plant profitability, [...] methodology applicable across energy system studies - positioning Australia as a global leader in smart renewable integration."
+    },
+    {
+      "id": "resilient-price-forecasting",
+      "title": "Resilient Electricity Price Forecasting via Synthetic Data for Extreme Events and Market Shocks in the National Electricity Market",
+      "areas": ["Electricity markets", "Forecasting", "Generative AI"],
+      "summary": "Price forecasts fail during market shocks, exactly when they matter most. This project uses reverse stress testing and synthetic data to build models that hold up under never-before-seen conditions.",
+      "description": "Electricity markets are facing unprecedented volatility from extreme weather, regulatory change, and rapid energy transitions. Forecasting models often fail during market shocks - precisely when accuracy matters most. This project will develop resilient electricity price forecasting capable of sustaining accuracy under extreme, never-before-seen conditions.\n\nOur approach integrates reverse stress testing (adapted from finance), complex network analysis, and advanced AI, including generative models and deep learning. A synthetic data pipeline will simulate \"future shocks\" beyond historical records - such as equipment failures, coordinated market behaviour, prolonged low renewable periods, and grid contingencies. Using the open-source NEMPy platform, we will synthesise realistic [...] learning models robust to extreme scenarios.\n\nThis project builds on our team's track record in developing market-leading National Electricity Market forecasting tools, commercialised via OptiGrid Pty Ltd. Success will deliver a proof of concept for resilient forecasting technology with high commercial and industry collaboration potential through competitive funding such as CRC-P and ARC Linkage Projects."
+    },
+    {
+      "id": "multi-interval-look-ahead-dispatch",
+      "title": "Multi-Interval Look-Ahead Dispatch: Optimising Battery Use and Reducing Market Power in Australia's Electricity Market",
+      "areas": ["Electricity markets", "Battery storage", "Optimisation"],
+      "summary": "The NEM dispatches five minutes at a time, wasting renewable energy and inviting strategic rebidding. This project builds a look-ahead dispatch model in NEMPy that couples intervals together.",
+      "description": "Australia's National Electricity Market (NEM) currently makes short-sighted dispatch decisions every five minutes, wasting low-cost renewable energy, under-utilising batteries, and enabling market power that inflates prices.\n\nThis PhD project will develop and apply an advanced multi-interval look-ahead dispatch model in the open-source NEMPy simulation environment, enabling temporal coupling of dispatch intervals. This forward-looking approach, used in leading overseas markets, will optimise battery charging/discharging decisions and reduce opportunities for strategic rebidding. The research will combine advanced optimisation, computational modelling, and policy analysis, producing a transparent simulation platform and evidence for market reform.\n\nAnticipated impacts include lower wholesale price volatility, improved integration of renewables, and more efficient use of energy storage - translating into fairer prices for households and small businesses. The project aligns with the Sustainable Green Transition Signature Research Theme and the University's Research Strategy by delivering innovative, industry linked solutions to accelerate Australia's clean energy transformation."
+    },
+    {
+      "id": "dictionary-based-meter-compression",
+      "title": "Privacy-Preserving Smart Meter Data Compression: Developing a Dictionary-Based Time Series Method",
+      "areas": ["Smart meter data", "Privacy", "Time series compression"],
+      "summary": "Smart meter data is not as anonymous as it looks. This project develops a dictionary-based compression method that preserves privacy while keeping computation, information loss and storage costs low.",
+      "description": "Despite the belief that smart meter data is anonymous, it can often be re-identified with external knowledge. Studies show many households can be distinguished using weekly consumption data and machine learning models. Such data poses risks such as mass human behavioural analysis and real-time surveillance. Privacy-preserving techniques for smart meters often fall short for many applications.\n\nThis project aims to develop a solution using a dictionary-based time series compression method, combining a compression algorithm and codebook method. The solution will emphasise low computation, minimal information loss, suitability for smart grid applications, high privacy preservation, and low communication and warehousing costs.\n\nWe also plan to validate the model on a real smart meter or equivalent edge computing device to ensure its effectiveness."
+    }
+  ]
+}
