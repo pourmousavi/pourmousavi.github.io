@@ -4008,6 +4008,9 @@ body.audio-player-visible {
 
 /* Project dialog */
 .project-dialog {
+    /* the global * { margin: 0 } reset kills the UA's dialog { margin: auto },
+       which is what centres a modal in the viewport */
+    margin: auto;
     width: min(640px, calc(100vw - 2rem));
     max-height: min(80vh, 720px);
     padding: 2rem;
