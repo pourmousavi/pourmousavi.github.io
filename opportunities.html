@@ -237,7 +237,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a class="btn btn-primary ob-email" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Contact Me" data-email-subject="Enquiry about Adelaide University research degree scholarship"></a>
+                            <a class="btn btn-primary ob-email" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Contact Me" data-email-subject="Enquiry about Adelaide University research degree scholarship" data-email-body="Dear Dr Pourmousavi,&#10;&#10;I would like to be considered for a research degree scholarship.&#10;&#10;Eligibility (domestic applicant, or where you completed an Australian/NZ degree):&#10;Degree and university:&#10;Year completed:&#10;GPA (out of 7):&#10;Capstone, honours or masters research project, and the mark you received:&#10;Relevant skills and experience:&#10;Research area or project that interests me:&#10;&#10;I have attached my CV and academic transcripts.&#10;&#10;Kind regards,"></a>
                         </div>
                         <button class="wizard-back" onclick="wizardBack()">Back</button>
                         <button class="wizard-restart" onclick="wizardRestart()">Start Over</button>
@@ -347,7 +347,7 @@
         <div class="section" id="sample-projects" data-section-label="Sample Projects">
             <h2 class="section-title">Sample Projects</h2>
             <div class="section-content">
-                <p>These are <strong>project ideas, not funded positions</strong>. All five are PhD projects listed publicly on the University's research projects site, under the Sustainable Green Transition research theme, and they show the kind of work my team does. If the checker above says you are eligible for the Graduate Research Talent Scheme, proposing one of these is a good way to open your email to me - and I am just as happy to hear a topic of your own that fits <a href="#research-areas">our research areas</a>.</p>
+                <p>These are <strong>project ideas, not funded positions</strong>. All five are PhD projects listed publicly on the University's <a href="https://adelaide.edu.au/research/research-degrees/research-projects/" target="_blank">research projects page</a> (search for <strong>pourmousavi</strong> there to filter that list), under the Sustainable Green Transition research theme, and they show the kind of work my team does. If the checker above says you are eligible for the Graduate Research Talent Scheme, proposing one of these is a good way to open your email to me - and I am just as happy to hear a topic of your own that fits <a href="#research-areas">our research areas</a>.</p>
 
                 <div class="project-grid" id="projectGrid">
                     <p class="project-fallback">The current list of projects is on the University's <a href="https://adelaide.edu.au/research/research-degrees/research-projects/" target="_blank">research projects page</a>.</p>
@@ -362,9 +362,9 @@
             <h3 id="projectDialogTitle"></h3>
             <p class="project-dialog-areas" id="projectDialogAreas" hidden></p>
             <div class="project-dialog-body" id="projectDialogBody"></div>
+            <p class="project-dialog-note">Listed on the University's <a href="https://adelaide.edu.au/research/research-degrees/research-projects/" target="_blank">research projects page</a> - search for <strong>pourmousavi</strong> there to filter the list down to my projects.</p>
             <div class="project-dialog-actions">
-                <a class="btn btn-secondary" id="projectDialogLink" target="_blank" hidden>View on the University site</a>
-                <a class="btn btn-primary ob-email" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Email Me About This Project" data-email-subject="Enquiry about a sample research project"></a>
+                <a class="btn btn-primary ob-email" id="projectDialogEmail" data-email-user="a.pourm" data-email-d1="adelaide" data-email-d2="edu" data-email-d3="au" data-email-text="Email Me About This Project" data-email-subject="PhD project enquiry"></a>
             </div>
         </dialog>
 

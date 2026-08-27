@@ -15,7 +15,7 @@
     const dialogTitle = document.getElementById('projectDialogTitle');
     const dialogAreas = document.getElementById('projectDialogAreas');
     const dialogBody = document.getElementById('projectDialogBody');
-    const dialogLink = document.getElementById('projectDialogLink');
+    const dialogEmail = document.getElementById('projectDialogEmail');
 
     fetch('data/projects.json')
         .then(response => response.ok ? response.json() : Promise.reject(response.status))
@@ -86,14 +86,48 @@
                 dialogBody.appendChild(p);
             });
 
-        if (project.url) {
-            dialogLink.href = project.url;
-            dialogLink.hidden = false;
-        } else {
-            dialogLink.hidden = true;
+        if (dialogEmail) {
+            const mailto = buildMailto(project);
+            if (mailto) dialogEmail.href = mailto;
         }
 
         dialog.showModal();
+    }
+
+    // Rebuild the mailto for the project on show, so the subject names the
+    // project and the body arrives with the details worth having up front.
+    // The address is assembled from the same split data attributes common.js
+    // uses, so it is still absent from the page source.
+    function buildMailto(project) {
+        const user = dialogEmail.getAttribute('data-email-user');
+        const domain = ['data-email-d1', 'data-email-d2', 'data-email-d3']
+            .map(attr => dialogEmail.getAttribute(attr))
+            .filter(Boolean)
+            .join('.');
+        if (!user || !domain) return '';
+
+        const subject = 'PhD project enquiry: ' + project.title;
+        const body = [
+            'Dear Dr Pourmousavi,',
+            '',
+            'I would like to be considered for the project "' + project.title + '".',
+            '',
+            'Eligibility (domestic applicant, or where you completed an Australian/NZ degree):',
+            'Degree and university:',
+            'Year completed:',
+            'GPA (out of 7):',
+            'Capstone, honours or masters research project, and the mark you received:',
+            'Relevant skills and experience:',
+            'Why this project interests me:',
+            '',
+            'I have attached my CV and academic transcripts.',
+            '',
+            'Kind regards,'
+        ].join('\n');
+
+        return 'mailto:' + user + '@' + domain +
+            '?subject=' + encodeURIComponent(subject) +
+            '&body=' + encodeURIComponent(body);
     }
 
     // Clicking the backdrop closes the dialog. The dialog element fills the
