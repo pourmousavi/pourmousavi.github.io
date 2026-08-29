@@ -4520,6 +4520,12 @@ footer::before {
     margin: 0;
 }
 
+.footer-about .footer-expansion {
+    color: var(--primary-light);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
 /* ========================================
    Responsive Design
    ======================================== */
