@@ -358,22 +358,6 @@ nav:hover {
     color: var(--primary-light);
 }
 
-.nav-profile-image {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--primary);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 4px var(--shadow-light);
-}
-
-.nav-profile-image:hover {
-    transform: scale(1.05);
-    border-color: var(--accent-light);
-    box-shadow: 0 4px 8px var(--shadow-medium);
-}
-
 /* MERIT Lab wordmark */
 .brand-lockup {
     gap: 0.35rem;
