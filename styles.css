@@ -6071,3 +6071,56 @@ footer::before {
     padding: 0.2rem 0.6rem;
     margin: 0 0.3rem 0.75rem 0;
 }
+
+/* Director card */
+.director-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 2rem;
+    align-items: start;
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 3px solid var(--primary);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.director-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+}
+
+.director-role {
+    color: var(--primary);
+    font-size: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.director-body p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.director-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .director-card {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .director-links {
+        justify-content: center;
+    }
+}
