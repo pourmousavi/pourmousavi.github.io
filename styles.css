@@ -6095,7 +6095,7 @@ footer::before {
     border: 3px solid var(--primary);
 }
 
-.director-role {
+.director-body p.director-role {
     color: var(--primary);
     font-size: 0.9375rem;
     margin-bottom: 1rem;
