@@ -6095,6 +6095,7 @@ footer::before {
 /* Director card */
 #director {
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .director-card {
