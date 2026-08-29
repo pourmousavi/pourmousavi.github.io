@@ -374,6 +374,24 @@ nav:hover {
     box-shadow: 0 4px 8px var(--shadow-medium);
 }
 
+/* MERIT Lab wordmark */
+.brand-lockup {
+    gap: 0.35rem;
+    align-items: baseline;
+}
+
+.brand-mark {
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--primary);
+}
+
+.brand-type {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--text-hint);
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -4577,11 +4595,6 @@ footer::before {
         margin-right: 1rem;
     }
 
-    .nav-profile-image {
-        width: 28px;
-        height: 28px;
-    }
-
     .nav-links {
         gap: 0.3rem;
         flex-wrap: wrap;
@@ -4808,19 +4821,6 @@ footer::before {
     .logo span {
         display: inline;
         text-align: center;
-        font-weight: 700;
-    }
-    .nav-profile-image {
-        position: absolute;
-        left: 0.75rem;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 36px;
-        height: 36px;
-    }
-    /* Preserve vertical centering on hover (combine transforms) */
-    .nav-profile-image:hover {
-        transform: translateY(-50%) scale(1.05);
     }
 }
 /* ========================================
