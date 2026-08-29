@@ -592,7 +592,7 @@ nav:hover {
     margin-bottom: 1rem;
 }
 
-.brand-lockup-hero {
+.hero-text h1.brand-lockup-hero {
     display: flex;
     align-items: baseline;
     gap: 0.5rem;
