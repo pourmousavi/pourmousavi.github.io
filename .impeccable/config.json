@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-08-30T10:39:44.407Z",
+        "reason": "Site-wide card idiom predating the MERIT Lab rebrand; user confirmed intentional"
+      },
+      {
+        "rule": "border-accent-on-rounded",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-08-30T10:41:17.269Z",
+        "reason": "Same card idiom as side-tab; predates the rebrand, user confirmed intentional"
+      }
+    ]
+  }
+}
