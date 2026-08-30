@@ -20,6 +20,12 @@
         ],
         "createdAt": "2026-08-30T10:41:17.269Z",
         "reason": "Same card idiom as side-tab; predates the rebrand, user confirmed intentional"
+      },
+      {
+        "rule": "overused-font",
+        "value": "lato",
+        "createdAt": "2026-08-30T10:44:33.585Z",
+        "reason": "User confirmed Lato is intentional"
       }
     ]
   }
