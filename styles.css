@@ -4459,11 +4459,8 @@ footer::before {
     color: var(--surface);
     margin-bottom: 1rem;
     font-size: 1.25rem;
-    font-weight: 500;
-    background: linear-gradient(45deg, var(--surface), var(--accent-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .footer-about p {
