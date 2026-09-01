@@ -607,8 +607,8 @@ nav:hover {
 }
 
 /* --- credentials row: no rules, no boxes --- */
-.lab-stats { display: flex; flex-wrap: wrap; gap: 2.75rem; padding: 0.5rem 0 2.5rem; }
-.lab-stat { display: flex; flex-direction: column; }
+.lab-stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.75rem; padding: 0.5rem 0 4.25rem; }
+.lab-stat { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .lab-stat-value {
     font-size: 1.5rem; font-weight: 900; color: var(--surface); line-height: 1.05;
     font-variant-numeric: tabular-nums; letter-spacing: -0.4px;
@@ -622,7 +622,7 @@ nav:hover {
     .hero-lab { padding: 2.5rem 1.25rem 0; }
     .lab-top { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2rem; }
     .lab-positioning { max-width: none; }
-    .lab-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.15rem 1rem; padding: 0.25rem 0 2rem; }
+    .lab-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.15rem 1rem; padding: 0.25rem 0 3rem; }
     .lab-stat-value { font-size: 1.375rem; }
     .lab-stat-label { font-size: 0.625rem; letter-spacing: 1.2px; }
 }
