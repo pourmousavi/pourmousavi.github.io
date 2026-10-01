@@ -1,6 +1,21 @@
 {
   "publications": [
     {
+      "id": "cpaper3-2026",
+      "type": "conference",
+      "title": "Battery activity driven representative day selection to accelerate degradation estimation process",
+      "authors": "Shah Mohammad Mominul Islam and S. Ali Pourmousavi and Wen L. Soong and Hossein Ranjbar",
+      "conference": "8th International Conference on Smart Power & Internet Energy Systems (SPIES)",
+      "location": "Sunshine Coast, Australia",
+      "year": 2026,
+      "month": "Sep. 28-30",
+      "award": "Best Paper Presentation",
+      "url": "",
+      "pdf": "docs/CPaper3-2026.pdf",
+      "featured": true,
+      "featuredReason": "Best Paper Presentation at SPIES 2026"
+    },
+    {
       "id": "cpaper2-2026",
       "type": "conference",
       "title": "Design and Simulation of a Battery Electric Vehicle Model for Underground Mining Applications with Synthetic Data Generation for Machine Learning Model",

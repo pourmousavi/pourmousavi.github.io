@@ -11,6 +11,22 @@
   ],
   "news": [
     {
+      "id": "news-2026-014",
+      "date": "2026-09-29",
+      "type": "conference",
+      "title": "Congratulations to Dr Shah Islam on winning the Best Paper Presentation award at SPIES 2026 in the AI-Driven Modelling and Safe Operation Strategies for Advanced Energy Storage System theme.",
+      "link": "publications.html#cpaper3-2026",
+      "featured": true
+    },
+    {
+      "id": "news-2026-013",
+      "date": "2026-09-24",
+      "type": "graduation",
+      "title": "Shah has successfully completed all his PhD requirements. Congratulations, Dr Shah.",
+      "link": "",
+      "featured": true
+    },
+    {
       "id": "news-2026-012",
       "date": "2026-07-10",
       "type": "student",
