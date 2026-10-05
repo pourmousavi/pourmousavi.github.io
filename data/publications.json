@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "id": "jpaper5-2026",
+      "type": "journal",
+      "title": "Battery Degradation and Frequency Stability Considerations in the Design of Off-Grid Mining Microgrids",
+      "authors": "Hossein Ranjbar and S. Ali Pourmousavi and Wen L. Soong",
+      "journal": "Applied Energy",
+      "status": "Accepted for publication",
+      "year": 2026,
+      "month": "October",
+      "url": "",
+      "pdf": "docs/JPaper5-2026.pdf",
+      "audio": "docs/JPaper5-2026.mp3"
+    },
+    {
       "id": "cpaper3-2026",
       "type": "conference",
       "title": "Battery activity driven representative day selection to accelerate degradation estimation process",

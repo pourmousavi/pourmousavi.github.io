@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-015",
+      "date": "2026-10-05",
+      "type": "publication",
+      "title": "New paper, led by Hossein, accepted in Applied Energy on battery degradation and frequency stability in off-grid mining microgrid design",
+      "link": "publications.html#jpaper5-2026",
+      "featured": true
+    },
+    {
       "id": "news-2026-014",
       "date": "2026-09-29",
       "type": "award",
@@ -87,7 +95,7 @@
       "date": "2026-04-21",
       "type": "publication",
       "title": "New paper, led by Harrison, published on storage requirements for 100% renewable SA in Energy",
-      "link": "publications.html#jpaper5-2026",
+      "link": "publications.html#jpaper4-2026",
       "featured": true
     },
     {
