@@ -4,6 +4,19 @@
 // (data/scholar_metrics.json) that you can update via a small server-side task or manual refresh.
 
 (function() {
+  // Home-page publication count, same source as the Publications page total.
+  const HERO_PUBS_EL = document.getElementById('hero-pubs');
+  if (HERO_PUBS_EL) {
+    fetch('data/publications.json', { cache: 'no-store' })
+      .then((r) => r.ok ? r.json() : null)
+      .then((data) => {
+        if (data && Array.isArray(data.publications)) {
+          HERO_PUBS_EL.textContent = data.publications.length;
+        }
+      })
+      .catch(() => { /* keep HTML fallback */ });
+  }
+
   const CITATIONS_EL = document.getElementById('total-citations');
   const HERO_CITATIONS_EL = document.getElementById('hero-citations');
   const HINDEX_EL = document.getElementById('h-index');

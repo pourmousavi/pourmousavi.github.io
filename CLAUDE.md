@@ -213,7 +213,7 @@ The chatbot widget will hit the production Worker from localhost, which is fine 
 - **The single big `styles.css` is intentional.** Don't split it into per-page files unless explicitly asked — global cascade order matters and the whole site is small enough that the file size is not a problem.
 - **Commit style:** short imperative subject, optionally followed by a body. Examples from history: `Add jpaper2-2026, jpaper3-2026 to chatbot`, `Move chatbot into a slide-in drawer with persistent side trigger`, `feat: add audio summaries for publications`. Both bare and `feat:`/`chore:`-prefixed forms exist; match the surrounding style.
 - **Don't push secrets.** `SERPAPI_API_KEY` lives in GitHub Actions secrets; never hardcode it. `.gitignore` already excludes `.claude/settings.local.json` and `.DS_Store` — keep it that way.
-- **Citations and h-index in HTML are placeholders.** They appear in `publications.html` and `index.html` as stat-bar defaults (`90+`, `3,700+`, `30`) but are overwritten at runtime by `js/scholar.js` from `data/scholar_metrics.json`. Edit the JSON, not the HTML, if a number looks wrong.
+- **Citations and h-index in HTML are placeholders.** They appear in `publications.html` and `index.html` as stat-bar defaults (`90+`, `3,700+`, `30`) but are overwritten at runtime by `js/scholar.js` from `data/scholar_metrics.json`. Edit the JSON, not the HTML, if a number looks wrong. The home-page publication count (`#hero-pubs` in `index.html`) is likewise overwritten by `js/scholar.js` with the number of entries in `data/publications.json`, matching the Publications page total.
 
 ## 12. When in doubt
 
