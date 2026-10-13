@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-016",
+      "date": "2026-10-13",
+      "type": "publication",
+      "title": "New paper, led by Yogesh, accepted in Applied Energy on calibrated uncertainty quantification for prosumer flexibility in ancillary service markets",
+      "link": "publications.html#jpaper6-2026",
+      "featured": true
+    },
+    {
       "id": "news-2026-015",
       "date": "2026-10-05",
       "type": "publication",

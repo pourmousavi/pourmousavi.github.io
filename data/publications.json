@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "id": "jpaper6-2026",
+      "type": "journal",
+      "title": "Calibrated uncertainty quantification for prosumer flexibility aggregation in ancillary service markets",
+      "authors": "Yogesh Pipada Sunil Kumar and S. Ali Pourmousavi and Jon A. R. Liisberg and Julian Lemos-Vinasco",
+      "journal": "Applied Energy",
+      "status": "Accepted for publication",
+      "year": 2026,
+      "month": "October",
+      "url": "",
+      "pdf": "docs/JPaper6-2026.pdf",
+      "audio": "docs/JPaper6-2026.mp3"
+    },
+    {
       "id": "jpaper5-2026",
       "type": "journal",
       "title": "Battery Degradation and Frequency Stability Considerations in the Design of Off-Grid Mining Microgrids",
