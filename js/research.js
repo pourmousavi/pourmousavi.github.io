@@ -32,13 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
             subtitle: 'Transforming Australia\'s mining industry through battery-electric vehicles',
             meta: [
                 { label: 'Duration', value: '2020 - 2024 (3.5 years)' },
-                { label: 'Total Funding', value: '$3.5M+' },
+                { label: 'Total Funding', value: '$2.1M+' },
                 { label: 'Industry Partners', value: '7+ Organizations' },
                 { label: 'PhD Students', value: '3 Active/Completing' }
             ],
             description: [
                 'The MOVE project is a landmark industry-focused initiative providing the Australian mining industry with essential tools and information needed to transition operations to battery-supported electric vehicles (BEVs) and associated stationary machinery. The project addresses one of mining\'s most significant challenges: reducing the 30-50% of total mine site energy usage related to diesel-powered mining vehicles.',
-                'This project enables the resources sector to reduce energy costs, improve reliability, enhance occupational health and safety (OHS), and significantly reduce the carbon footprint of mining production—addressing the industry\'s 4-7% contribution to global greenhouse gas emissions.'
+                'This project enables the resources sector to reduce energy costs, improve reliability, enhance occupational health and safety (OHS), and significantly reduce the carbon footprint of mining production—addressing the industry\'s 4-7% contribution to global greenhouse gas emissions.',
+                'In October 2026 the MOVE design tools were launched as <strong>Vornu Energy MOVE</strong>, a free online app trademarked under Adelaide University. <a href="https://move.vornu.energy/" target="_blank" rel="noopener">Try the app</a> and tell us what you think. For partnership or consulting enquiries, visit <a href="https://vornu.energy/" target="_blank" rel="noopener">vornu.energy</a> or email <a href="mailto:contact@vornu.energy">contact@vornu.energy</a>.'
             ],
             partners: [
                 'Future Battery Industry CRC',
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'University of WA'
             ],
             achievements: [
+                { title: 'Commercialised as Vornu Energy MOVE', desc: 'Research translated into a free, publicly available web app (2026) for haul-fleet battery sizing, charger design, and operational simulation.' },
                 { title: 'All Deliverables Completed', desc: 'Successfully delivered all project reports and technical deliverables to FBICRC and industry partners on schedule.' },
                 { title: 'Major Media Coverage', desc: 'Featured in Australian Mining Magazine and Nikkei Magazine (Japan) for leading-edge research in mining electrification.' },
                 { title: 'Masterclass Delivery', desc: 'Delivered Underground Mining Fleet Electrification Masterclass in Perth (2024) for industry professionals.' },

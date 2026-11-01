@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-017",
+      "date": "2026-10-27",
+      "type": "collaboration",
+      "title": "Vornu Energy launches MOVE, a free online app for mine haul-fleet electrification built on our FBICRC MOVE research. Industry and academia are invited to try it, share feedback, and talk to us about partnerships and consulting",
+      "link": "research.html#move",
+      "featured": true
+    },
+    {
       "id": "news-2026-016",
       "date": "2026-10-13",
       "type": "publication",
