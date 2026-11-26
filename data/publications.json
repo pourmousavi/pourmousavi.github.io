@@ -1,6 +1,19 @@
 {
   "publications": [
     {
+      "id": "jpaper7-2026",
+      "type": "journal",
+      "title": "Stochastic bi-objective home energy management system optimisation: the trade-off between emissions and cost",
+      "authors": "Amos Schledorn and Julián Lemos-Vinasco and S. Ali Pourmousavi and Henrik Madsen and Daniela Guericke",
+      "journal": "Energy and Buildings",
+      "volume": "In press:118579",
+      "year": 2026,
+      "month": "November",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0378778826016397",
+      "pdf": "docs/JPaper7-2026.pdf",
+      "audio": "docs/JPaper7-2026.mp3"
+    },
+    {
       "id": "jpaper6-2026",
       "type": "journal",
       "title": "Calibrated uncertainty quantification for prosumer flexibility aggregation in ancillary service markets",
@@ -1088,7 +1101,7 @@
       "url": "http://www.sciencedirect.com/science/article/pii/S0196890410003638",
       "pdf": "docs/JPaper1-2011.pdf",
       "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761384)",
-      "audio":"docs/JPaper1-2011.mp3"
+      "audio": "docs/JPaper1-2011.mp3"
     },
     {
       "id": "jpaper2-2011",
@@ -1101,7 +1114,7 @@
       "url": "http://www.tandfonline.com/doi/abs/10.1080/15435075.2010.548887",
       "pdf": "docs/JPaper2-2011.pdf",
       "notes": "[Altmetric score](https://www.altmetric.com/details.php?domain=alipourmousavi.com&doi=10.1080%2F15435075.2010.548887)",
-      "audio":"docs/JPaper2-2011.mp3"
+      "audio": "docs/JPaper2-2011.mp3"
     },
     {
       "id": "cpaper1-2011",
@@ -1140,7 +1153,7 @@
       "url": "http://ieeexplore.ieee.org/document/5530418/?tp=&arnumber=5530418",
       "pdf": "docs/JPaper1-2010.pdf",
       "notes": "[Article has an altmetric score of 3](https://www.altmetric.com/details.php?domain=alipourmousavi.com&citation_id=62761426)",
-      "audio":"docs/JPaper1-2010.mp3"
+      "audio": "docs/JPaper1-2010.mp3"
     },
     {
       "id": "cpaper1-2010",

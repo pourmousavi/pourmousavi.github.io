@@ -11,6 +11,14 @@
   ],
   "news": [
     {
+      "id": "news-2026-020",
+      "date": "2026-11-26",
+      "type": "publication",
+      "title": "New paper published in Energy and Buildings on stochastic bi-objective home energy management, balancing emissions and cost",
+      "link": "publications.html#jpaper7-2026",
+      "featured": true
+    },
+    {
       "id": "news-2026-019",
       "date": "2026-11-23",
       "type": "media",
